@@ -1,0 +1,1474 @@
+{
+  "imageUrls": [
+    "https://gopanel.com/assets/img/globe.gif",
+    "https://fonts.gstatic.com/s/i/productlogos/translate/v14/24px.svg",
+    "https://www.gstatic.com/images/branding/product/2x/translate_24dp.png",
+    "https://www.google.com/images/cleardot.gif",
+    "https://translate.googleapis.com/translate_static/img/te_ctrl3.gif",
+    "https://gopanel.com/app/sidenav-reward.svg",
+    "https://gopanel.com/app/sidenav_profile.svg",
+    "https://gopanel.com/app/sidenav_bank.svg",
+    "https://gopanel.com/app/sidenav__ac_statement.svg",
+    "https://gopanel.com/app/sidenav_notification.svg",
+    "https://gopanel.com/app/img/logo.svg",
+    "https://gopanel.com/app/arrow-up.svg",
+    "https://gopanel.com/app/sidenav_activebets.svg",
+    "https://gopanel.com/app/coins-icon.png",
+    "https://gopanel.com/app/arrow-down.svg",
+    "https://gopanel.com/app/undefinedimg/wallet-img.svg",
+    "https://ss.manage90.com/panel-wl/commonAssets/sidenav-reward.svg",
+    "https://gopanel.com/assets/img/globe.gif",
+    "https://fonts.gstatic.com/s/i/productlogos/translate/v14/24px.svg",
+    "https://www.gstatic.com/images/branding/product/2x/translate_24dp.png",
+    "https://www.google.com/images/cleardot.gif",
+    "https://translate.googleapis.com/translate_static/img/te_ctrl3.gif",
+    "https://gopanel.com/app/sidenav-reward.svg",
+    "https://gopanel.com/app/sidenav_profile.svg",
+    "https://gopanel.com/app/sidenav_bank.svg",
+    "https://ss.manage90.com/panel-wl/commonAssets/coins-icon.png",
+    "https://ss.manage90.com/panel-wl/commonAssets/sidenav-reward.svg",
+    "https://ss.manage90.com/panel-wl/commonAssets/sidenav_bank.svg",
+    "https://ss.manage90.com/panel-wl/commonAssets/sidenav__ac_statement.svg",
+    "https://ss.manage90.com/panel-wl/commonAssets/sidenav_activebets.svg",
+    "https://ss.manage90.com/panel-wl/commonAssets/sidenav_profile.svg",
+    "https://ss.manage90.com/panel-wl/commonAssets/sidenav_notification.svg",
+    "https://ss.manage90.com/panel-wl/commonAssets/sidenav_rules.svg",
+    "https://ss.manage90.com/panel-wl/wl/gopanel/img/logo.svg",
+    "https://ss.manage90.com/panel-wl/commonAssets/arrow-down.svg",
+    "https://ss.manage90.com/panel-wl/commonAssets/arrow-up.svg",
+    "https://ss.manage90.com/panel-wl/wl/gopanel/img/wallet-img.svg",
+    "https://gopanel.com/app/img/logo.svg",
+    "https://ss.manage90.com/panel-wl/commonAssets/viewAll_image.png",
+    "https://gopanel.com/app/undefinedimg/wallet-img.svg",
+    "https://ss.manage63.com/south247/livecasinolobbyimages/imgi_8_f567154d09.webp",
+    "https://ss.manage63.com/south247/livecasinolobbyimages/Aviator%20(AviatroStudios)%206.1.webp",
+    "https://ss.manage63.com/south247/livecasinolobbyimages/imgi_72_b5d25ed060.png",
+    "https://ss.manage90.com/panel-wl/commonAssets/casino-icon.svg",
+    "https://ss.manage90.com/panel-wl/commonAssets/go-casino-icon.svg",
+    "https://ss.manage90.com/panel-wl/commonAssets/go-crash-icon.svg",
+    "https://ss.manage90.com/panel-wl/commonAssets/chips-header-icon.svg",
+    "https://images.casinoexch.com/game/smartsoft-gaming-jetx.webp",
+    "https://images.casinoexch.com/game/ezugi-sic-bo.webp",
+    "https://images.casinoexch.com/game/turbogames-aero.webp",
+    "https://images.casinoexch.com/game/ezugi-dragon-tiger.webp",
+    "https://images.casinoexch.com/game/turbo-games-vortex-12929.webp",
+    "https://ss.manage63.com/south247/livecasinolobbyimages/inout-games-chicken-road-2.png",
+    "https://ss.manage90.com/panel-wl/commonAssets/whatsapp-icon.svg",
+    "https://ss.manage90.com/panel-wl/commonAssets/aviator_text.png",
+    "https://ss.manage90.com/panel-wl/commonAssets/aviator_bg.png",
+    "https://ss.manage63.com/south247/livecasinolobbyimages/inout-games-aviafly-2.png",
+    "https://ss.manage90.com/panel-wl/commonAssets/aviator_icon.png",
+    "https://ss.manage90.com/panel-wl/commonAssets/chickenroad_bg.png",
+    "https://images.casinoexch.com/game/smartsoft-gaming-chicken-highway.webp",
+    "https://ss.manage63.com/south247/livecasinolobbyimages/PilotChicken.webp",
+    "https://images.casinoexch.com/game/habanero-bonus-poker-10-hand.webp",
+    "https://images.casinoexch.com/game/habanero-double-double-bonus-poker-10-hand.webp",
+    "https://images.casinoexch.com/game/habanero-jacks-or-better-5-hand.webp",
+    "https://ss.manage63.com/south247/livecasinolobbyimages/Trader.webp",
+    "https://ss.manage63.com/south247/livecasinolobbyimages/Hotline.webp",
+    "https://ss.manage63.com/south247/livecasinolobbyimages/Paper%20Toss%20(new).webp",
+    "https://ss.manage63.com/south247/livecasinolobbyimages/Rock%20Paper%20Scissors%20(New).webp",
+    "https://ss.manage63.com/south247/livecasinolobbyimages/CockFighting.webp",
+    "https://ss.gopunt.com/go-punt/banner/1776447434456_3053_fETaRWVUyWdsRGjmBJQznitbs.jpeg",
+    "https://ss.manage63.com/south247/livecasinolobbyimages/SpinAndWinWild.webp",
+    "https://ss.manage63.com/south247/livecasinolobbyimages/MegaFireblazeBlackjackLive.webp",
+    "https://ss.manage63.com/south247/livecasinolobbyimages/EZMarbleRaceMonaco.webp",
+    "https://images.casinoexch.com/game/habanero-joker-poker-10-hand.webp",
+    "https://images.casinoexch.com/game/habanero-jacks-or-better-50-hand.webp",
+    "https://ss.manage63.com/south247/livecasinolobbyimages/AdventuresBeyondWonderland.webp",
+    "https://ss.manage63.com/south247/livecasinolobbyimages/The-Greatest-Card-Game.webp",
+    "https://ss.manage63.com/south247/livecasinolobbyimages/SpinWin.webp",
+    "https://gopanel.com/assets/img/f-icon.svg",
+    "https://images.casinoexch.com/game/habanero-bonus-poker-100-hand.webp",
+    "https://ss.manage63.com/south247/livecasinolobbyimages/EZMarbleRaceLasVegas.webp",
+    "https://ss.manage63.com/south247/livecasinolobbyimages/MegaFireblazeRouletteLive.webp",
+    "https://images.casinoexch.com/game/habanero-jacks-or-better-10-hand.webp",
+    "https://ss.manage63.com/south247/fawkcasino/games/aura-gaming-3-cards-judgement.webp",
+    "https://ss.manage63.com/south247/fawkcasino/games/aura-gaming-bollywood-casino.webp",
+    "https://images.casinoexch.com/game/habanero-bonus-poker-5-hand.webp",
+    "https://images.casinoexch.com/game/habanero-jacks-or-better-100-hand.webp",
+    "https://ss.manage90.com/panel-wl/commonAssets/chickenroad_text.png",
+    "https://images.casinoexch.com/game/royal-gaming-roulette-fusion.webp",
+    "https://ss.manage90.com/panel-wl/commonAssets/chickenroad_icon.png",
+    "https://ss.manage63.com/south247/fawkcasino/games/aura-gaming-amar-akbar-anthony.webp",
+    "https://ss.manage63.com/south247/livecasinolobbyimages/American%20Roulette.webp",
+    "https://ss.manage63.com/south247/fawkcasino/games/Roulette.webp",
+    "https://gopanel.com/assets/img/default-img.svg",
+    "https://ss.gopunt.com/go-punt/banner/1783420367285_4035_UTmGCFYUsMwUwxJdFkmtgMpQA.jpeg",
+    "https://images.casinoexch.com/game/habanero-bonus-poker-50-hand.webp",
+    "https://images.casinoexch.com/game/2026-07/1785508076839_184961_SVUXBMZWPQJAQGXASJDBKWUAP.webp",
+    "https://images.casinoexch.com/game/aviatrix-nft-aviatrix.webp",
+    "https://ss.manage63.com/south247/livecasinolobbyimages/Las%20Vegas%20Roulette.webp",
+    "https://cdnimg.manage63.com/cricflags/trophy.svg",
+    "https://cdnimg.manage63.com/games_icon/soccer.svg",
+    "https://cdnimg.manage63.com/games_icon/ball.svg",
+    "https://cdnimg.manage63.com/games_icon/tennis.svg",
+    "https://ss.manage63.com/south247/livecasinolobbyimages/pragmatic-play-prive%E2%95%A0%C3%BC-lounge-blackjack-11.webp",
+    "https://images.casinoexch.com/game/gamzix-pilot.webp",
+    "https://images.casinoexch.com/game/spribe-aviator.webp",
+    "https://images.casinoexch.com/game/inout-games-ballonix.webp",
+    "https://images.casinoexch.com/game/inout-games-aviafly.webp",
+    "https://images.casinoexch.com/game/fugaso-magnify-man-old.webp",
+    "https://images.casinoexch.com/game/smartsoft-gaming-cricketx.webp",
+    "https://images.casinoexch.com/game/inout-games-crash.webp",
+    "https://images.casinoexch.com/game/inout-games-sugar-daddy.webp",
+    "https://images.casinoexch.com/game/inout-games-bubbles.webp",
+    "https://images.casinoexch.com/game/smartsoft-gaming-crash-duel-x.webp",
+    "https://images.casinoexch.com/game/smartsoft-gaming-smash-x.webp",
+    "https://images.casinoexch.com/game/turbogames-chicken-route.webp",
+    "https://images.casinoexch.com/game/smartsoft-gaming-plinkox.png",
+    "https://ss.manage63.com/south247/livecasinolobbyimages/AstroPop.jpg",
+    "https://ss.manage63.com/south247/livecasinolobbyimages/101.webp",
+    "https://ss.manage63.com/south247/livecasinolobbyimages/pgsoft-knockout-riches.webp",
+    "https://ss.manage63.com/south247/livecasinolobbyimages/Loli%20Pop.png",
+    "https://images.casinoexch.com/game/caleta-gaming-bingo-genio.webp",
+    "https://images.casinoexch.com/game/caleta-gaming-bingo-pirata.webp",
+    "https://ss.manage63.com/south247/livecasinolobbyimages/VirtualTeenpatti.webp",
+    "https://images.casinoexch.com/game/caleta-gaming-bingolaco.webp",
+    "https://images.casinoexch.com/game/hacksaw-gaming-stickem.webp",
+    "https://images.casinoexch.com/game/nolimit-city-casino-win-spin.webp",
+    "https://images.casinoexch.com/game/caleta-gaming-jingle-bell-bingo.webp",
+    "https://images.casinoexch.com/game/smartsoft-gaming-towerx.webp",
+    "https://ss.gopunt.com/go-punt/banner/1776671959350_8225_bkxJEHvpBYAHDJMxDSahbWKGB.jpeg",
+    "https://images.casinoexch.com/game/caleta-gaming-bingolicia.webp",
+    "https://images.casinoexch.com/game/turbo-games-cricket-boom-12940.webp",
+    "https://ss.gopunt.com/go-punt/banner/1775751689263_3295_qppCmEpjUHXHDvmnxsgfYUfQr.jpeg",
+    "https://images.casinoexch.com/game/turbo-games-catanza-12939.webp",
+    "https://images.casinoexch.com/game/turbo-games-bubbles-12927.webp",
+    "https://images.casinoexch.com/game/turbo-games-ball-&-ball-12910.webp",
+    "https://images.casinoexch.com/game/2026-08/1786086167334_569530_XTYZHEGJEXHJYXCCZNAHDWUKK.webp",
+    "https://images.casinoexch.com/game/sp-gaming-shark-rush.webp",
+    "https://images.casinoexch.com/game/el-casino-wheel-roulette-11591.webp",
+    "https://images.casinoexch.com/game/WonderlandLuckyBall.webp",
+    "https://images.casinoexch.com/game/pragmatic-play-money-time.webp",
+    "https://images.casinoexch.com/game/pragmatic-play-24d-spin.webp",
+    "https://images.casinoexch.com/game/RichieWheel%202.webp",
+    "https://images.casinoexch.com/game/pragmatic-play-powerup-roulette.webp",
+    "https://images.casinoexch.com/game/pragmatic-play-fortune-roulette.webp",
+    "https://images.casinoexch.com/game/pragmatic-play-lucky-6-roulette.webp",
+    "https://images.casinoexch.com/game/pragmatic-play-mega-roulette.webp",
+    "https://images.casinoexch.com/game/pragmatic-play-mega-wheel.webp",
+    "https://images.casinoexch.com/game/pragmatic-play-snakes-&-ladders-live.webp",
+    "https://images.casinoexch.com/game/pragmatic-play-sweet-bonanza-candyland.webp",
+    "https://images.casinoexch.com/game/aura-32-cards-casino.webp",
+    "https://images.casinoexch.com/game/aura_andar_bahar.webp",
+    "https://images.casinoexch.com/game/aura_teenpatti_t20.webp",
+    "https://images.casinoexch.com/game/aura_hi_low.webp",
+    "https://images.casinoexch.com/game/aura_live_teenpatti.webp",
+    "https://images.casinoexch.com/game/aura_worli_matka.webp",
+    "https://images.casinoexch.com/game/aura_7_up_&_down.webp",
+    "https://images.casinoexch.com/game/aura_muflis_teenpatti.webp",
+    "https://images.casinoexch.com/game/aura_2_cards_teenpatti.webp",
+    "https://images.casinoexch.com/game/royal-gaming-lucky7.webp",
+    "https://images.casinoexch.com/game/royal-gaming-center-card.webp",
+    "https://images.casinoexch.com/game/royal-gaming-trio.webp",
+    "https://images.casinoexch.com/game/royal-gaming-akbar-romeo-walter.webp",
+    "https://images.casinoexch.com/game/royal-gaming-high-low.webp",
+    "https://images.casinoexch.com/game/royal-gaming-bollywood-casino.webp",
+    "https://images.casinoexch.com/game/royal-gaming-casino-war.webp",
+    "https://images.casinoexch.com/game/royal-gaming-3-cards-judgement.webp",
+    "https://images.casinoexch.com/game/ezugi-bet-with-streamers-1756.webp",
+    "https://images.casinoexch.com/game/ezugi-lucky-7.webp",
+    "https://images.casinoexch.com/game/ezugi-baccarat.webp",
+    "https://images.casinoexch.com/game/pragmatic-play-andar-bahar.webp",
+    "https://images.casinoexch.com/game/ezugi-mambo-unlimited-blackjack.webp",
+    "https://images.casinoexch.com/game/vivo-gaming-american-auto-roulette-11505.webp",
+    "https://images.casinoexch.com/game/royal-gaming-auto-roulette.webp",
+    "https://images.casinoexch.com/game/aura_sicbo.webp",
+    "https://images.casinoexch.com/game/royal-gaming-diamond-roulette.webp",
+    "https://images.casinoexch.com/game/royal-gaming-lightning-roulette.webp",
+    "https://images.casinoexch.com/game/ezugi-rumba-blackjack-2.webp",
+    "https://images.casinoexch.com/game/pragmatic-play-korean-blackjack-1.webp",
+    "https://images.casinoexch.com/game/pragmatic-play-korean-blackjackx-1.webp",
+    "https://images.casinoexch.com/game/pragmatic-play-korean-blackjackx-2.webp",
+    "https://images.casinoexch.com/game/pragmatic-play-korean-blackjackx-3.webp",
+    "https://images.casinoexch.com/game/pragmatic-play-korean-speed-blackjack-1.webp",
+    "https://images.casinoexch.com/game/smartsoft-gaming-wild-boka-jamba-10.webp",
+    "https://images.casinoexch.com/game/nolimit-city-bangkok-hilton.webp",
+    "https://images.casinoexch.com/game/smartsoft-gaming-multi-hot-wild-ways.webp",
+    "https://images.casinoexch.com/game/smartsoft-gaming-jingle-bell-bonanza.webp",
+    "https://images.casinoexch.com/game/booming-games-black-friday-cart-craze.webp",
+    "https://images.casinoexch.com/game/booming-games-asia-wins.webp",
+    "https://images.casinoexch.com/game/habanero-infernal-fury.webp",
+    "https://images.casinoexch.com/game/TreasureFortune.webp",
+    "https://images.casinoexch.com/game/smartsoft-gaming-multihot5.webp",
+    "https://images.casinoexch.com/game/betsoft-barbary-coast.webp",
+    "https://images.casinoexch.com/game/gamzix-buffalo-coin-hold-the-spin.webp",
+    "https://images.casinoexch.com/game/wazdan-9-coins.webp",
+    "https://images.casinoexch.com/game/betsoft-jungle-stripes.webp",
+    "https://images.casinoexch.com/game/nolimit-city-coins-of-fortune.webp",
+    "https://images.casinoexch.com/game/playtech-stars-ablaze.webp",
+    "https://images.casinoexch.com/game/playtech-panther-pays.webp",
+    "https://images.casinoexch.com/game/betsoft-oasis-poker.webp",
+    "https://images.casinoexch.com/game/pgsoft-dragon-tiger-luck.webp",
+    "https://images.casinoexch.com/game/pgsoft-win-win-fish-prawn-crab.webp",
+    "https://images.casinoexch.com/game/habanero-three-card-poker.webp",
+    "https://images.casinoexch.com/game/habanero-sic-bo.webp",
+    "https://images.casinoexch.com/game/betsoft-american-blackjack.webp",
+    "https://images.casinoexch.com/game/habanero-caribbean-stud.webp",
+    "https://images.casinoexch.com/game/inout-games-joker-poker.webp",
+    "https://images.casinoexch.com/livecasinolobbyimages/new-provider-icon-sexybcrt.png",
+    "https://images.casinoexch.com/livecasinolobbyimages/new-provider-icon-inout.png",
+    "https://images.casinoexch.com/livecasinolobbyimages/turbogames.png",
+    "https://images.casinoexch.com/livecasinolobbyimages/Pragmatic_Play.png",
+    "https://images.casinoexch.com/livecasinolobbyimages/Smartsoft_Gaming.png",
+    "https://images.casinoexch.com/livecasinolobbyimages/new-provider-icon-Evolution.png",
+    "https://images.casinoexch.com/livecasinolobbyimages/jili.png",
+    "https://images.casinoexch.com/livecasinolobbyimages/Ezugi.png",
+    "https://images.casinoexch.com/livecasinolobbyimages/Playtech_Live.png",
+    "https://images.casinoexch.com/livecasinolobbyimages/vivo.png",
+    "https://images.casinoexch.com/livecasinolobbyimages/new-provider-icon-BGaming.png",
+    "https://gopanel.com/assets/img/f-icon.svg",
+    "https://gopanel.com/assets/img/default-img.svg"
+  ],
+  "domData": [
+    {
+      "src": "https://gopanel.com/assets/img/globe.gif",
+      "alt": "",
+      "className": "",
+      "parentClass": "translator-wrap"
+    },
+    {
+      "src": "https://www.google.com/images/cleardot.gif",
+      "alt": "",
+      "className": "goog-te-gadget-icon",
+      "parentClass": "goog-te-gadget-simple"
+    },
+    {
+      "src": "https://www.google.com/images/cleardot.gif",
+      "alt": "",
+      "className": "",
+      "parentClass": "VIpgJd-ZVi9od-xl07Ob-lTBxed"
+    },
+    {
+      "src": "https://www.google.com/images/cleardot.gif",
+      "alt": "",
+      "className": "",
+      "parentClass": "VIpgJd-ZVi9od-xl07Ob-lTBxed"
+    },
+    {
+      "src": "https://ss.manage90.com/panel-wl/wl/gopanel/img/logo.svg",
+      "alt": "Company App Logo",
+      "className": "ng-star-inserted",
+      "parentClass": "img-wrap"
+    },
+    {
+      "src": "https://ss.manage90.com/panel-wl/commonAssets/sidenav-reward.svg",
+      "alt": "Menu Icon",
+      "className": "",
+      "parentClass": "smenu-link"
+    },
+    {
+      "src": "https://ss.manage90.com/panel-wl/commonAssets/sidenav_profile.svg",
+      "alt": "Menu Icon",
+      "className": "",
+      "parentClass": "smenu-link"
+    },
+    {
+      "src": "https://ss.manage90.com/panel-wl/commonAssets/sidenav_bank.svg",
+      "alt": "Menu Icon",
+      "className": "",
+      "parentClass": "smenu-link"
+    },
+    {
+      "src": "https://ss.manage90.com/panel-wl/commonAssets/sidenav__ac_statement.svg",
+      "alt": "Menu Icon",
+      "className": "",
+      "parentClass": "smenu-link"
+    },
+    {
+      "src": "https://ss.manage90.com/panel-wl/commonAssets/sidenav_activebets.svg",
+      "alt": "Menu Icon",
+      "className": "",
+      "parentClass": "smenu-link"
+    },
+    {
+      "src": "https://ss.manage90.com/panel-wl/commonAssets/sidenav_notification.svg",
+      "alt": "Menu Icon",
+      "className": "",
+      "parentClass": "smenu-link"
+    },
+    {
+      "src": "https://ss.manage90.com/panel-wl/commonAssets/sidenav_rules.svg",
+      "alt": "Menu Icon",
+      "className": "",
+      "parentClass": "smenu-link"
+    },
+    {
+      "src": "https://ss.manage90.com/panel-wl/commonAssets/arrow-up.svg",
+      "alt": "",
+      "className": "",
+      "parentClass": "img-wrap"
+    },
+    {
+      "src": "https://ss.manage90.com/panel-wl/wl/gopanel/img/logo.svg",
+      "alt": "Company App Logo",
+      "className": "logo ng-star-inserted",
+      "parentClass": "logo-wrap"
+    },
+    {
+      "src": "https://ss.manage90.com/panel-wl/commonAssets/coins-icon.png",
+      "alt": "Company App Logo",
+      "className": "logo",
+      "parentClass": ""
+    },
+    {
+      "src": "https://ss.manage90.com/panel-wl/commonAssets/arrow-down.svg",
+      "alt": "",
+      "className": "",
+      "parentClass": "img-wrap"
+    },
+    {
+      "src": "https://ss.gopunt.com/go-punt/banner/1783420367285_4035_UTmGCFYUsMwUwxJdFkmtgMpQA.jpeg",
+      "alt": "banner",
+      "className": "",
+      "parentClass": "img-wrap"
+    },
+    {
+      "src": "https://ss.gopunt.com/go-punt/banner/1776447434456_3053_fETaRWVUyWdsRGjmBJQznitbs.jpeg",
+      "alt": "banner",
+      "className": "",
+      "parentClass": "img-wrap"
+    },
+    {
+      "src": "https://ss.gopunt.com/go-punt/banner/1775751689263_3295_qppCmEpjUHXHDvmnxsgfYUfQr.jpeg",
+      "alt": "banner",
+      "className": "",
+      "parentClass": "img-wrap"
+    },
+    {
+      "src": "https://ss.gopunt.com/go-punt/banner/1776671959350_8225_bkxJEHvpBYAHDJMxDSahbWKGB.jpeg",
+      "alt": "banner",
+      "className": "",
+      "parentClass": "img-wrap"
+    },
+    {
+      "src": "https://ss.manage90.com/panel-wl/commonAssets/aviator_bg.png",
+      "alt": "",
+      "className": "background",
+      "parentClass": "mdc-button__label"
+    },
+    {
+      "src": "https://ss.manage90.com/panel-wl/commonAssets/aviator_text.png",
+      "alt": "",
+      "className": "img-text",
+      "parentClass": "mdc-button__label"
+    },
+    {
+      "src": "https://ss.manage90.com/panel-wl/commonAssets/aviator_icon.png",
+      "alt": "game.game_name",
+      "className": "game-icon",
+      "parentClass": "mdc-button__label"
+    },
+    {
+      "src": "https://ss.manage90.com/panel-wl/commonAssets/chickenroad_bg.png",
+      "alt": "",
+      "className": "background",
+      "parentClass": "mdc-button__label"
+    },
+    {
+      "src": "https://ss.manage90.com/panel-wl/commonAssets/chickenroad_text.png",
+      "alt": "",
+      "className": "img-text",
+      "parentClass": "mdc-button__label"
+    },
+    {
+      "src": "https://ss.manage90.com/panel-wl/commonAssets/chickenroad_icon.png",
+      "alt": "game.game_name",
+      "className": "game-icon",
+      "parentClass": "mdc-button__label"
+    },
+    {
+      "src": "https://images.casinoexch.com/livecasinolobbyimages/new-provider-icon-sexybcrt.png",
+      "alt": "Sexy",
+      "className": "",
+      "parentClass": "p-logo"
+    },
+    {
+      "src": "https://images.casinoexch.com/livecasinolobbyimages/new-provider-icon-inout.png",
+      "alt": "InOut Games",
+      "className": "",
+      "parentClass": "p-logo"
+    },
+    {
+      "src": "https://images.casinoexch.com/livecasinolobbyimages/turbogames.png",
+      "alt": "Turbogames",
+      "className": "",
+      "parentClass": "p-logo"
+    },
+    {
+      "src": "https://images.casinoexch.com/livecasinolobbyimages/Pragmatic_Play.png",
+      "alt": "Pragmatic Play",
+      "className": "",
+      "parentClass": "p-logo"
+    },
+    {
+      "src": "https://images.casinoexch.com/livecasinolobbyimages/Smartsoft_Gaming.png",
+      "alt": "Smartsoft Gaming",
+      "className": "",
+      "parentClass": "p-logo"
+    },
+    {
+      "src": "https://images.casinoexch.com/livecasinolobbyimages/new-provider-icon-Evolution.png",
+      "alt": "Evolution Gaming",
+      "className": "",
+      "parentClass": "p-logo"
+    },
+    {
+      "src": "https://images.casinoexch.com/livecasinolobbyimages/jili.png",
+      "alt": "JiLi Gaming",
+      "className": "",
+      "parentClass": "p-logo"
+    },
+    {
+      "src": "https://images.casinoexch.com/livecasinolobbyimages/Ezugi.png",
+      "alt": "Ezugi",
+      "className": "",
+      "parentClass": "p-logo"
+    },
+    {
+      "src": "https://images.casinoexch.com/livecasinolobbyimages/Playtech_Live.png",
+      "alt": "Playtech",
+      "className": "",
+      "parentClass": "p-logo"
+    },
+    {
+      "src": "https://images.casinoexch.com/livecasinolobbyimages/vivo.png",
+      "alt": "Vivo Gaming",
+      "className": "",
+      "parentClass": "p-logo"
+    },
+    {
+      "src": "https://images.casinoexch.com/livecasinolobbyimages/new-provider-icon-BGaming.png",
+      "alt": "B Gaming",
+      "className": "",
+      "parentClass": "p-logo"
+    },
+    {
+      "src": "https://gopanel.com/assets/img/default-img.svg",
+      "alt": "",
+      "className": "",
+      "parentClass": "fancy-icon"
+    },
+    {
+      "src": "https://gopanel.com/assets/img/default-img.svg",
+      "alt": "",
+      "className": "",
+      "parentClass": "fancy-icon"
+    },
+    {
+      "src": "https://gopanel.com/assets/img/default-img.svg",
+      "alt": "",
+      "className": "",
+      "parentClass": "fancy-icon"
+    },
+    {
+      "src": "https://gopanel.com/assets/img/default-img.svg",
+      "alt": "",
+      "className": "",
+      "parentClass": "fancy-icon"
+    },
+    {
+      "src": "https://gopanel.com/assets/img/default-img.svg",
+      "alt": "",
+      "className": "",
+      "parentClass": "fancy-icon"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/ezugi-sic-bo.webp",
+      "alt": "Sic Bo",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/turbogames-aero.webp",
+      "alt": "Aero",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/smartsoft-gaming-chicken-highway.webp",
+      "alt": "Chicken Highway",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/ezugi-dragon-tiger.webp",
+      "alt": "Dragon Tiger",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://ss.manage63.com/south247/livecasinolobbyimages/inout-games-chicken-road-2.png",
+      "alt": "Chicken Road 2",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/turbo-games-vortex-12929.webp",
+      "alt": "Vortex",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/smartsoft-gaming-jetx.webp",
+      "alt": "Jet X",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/2026-07/1785508076839_184961_SVUXBMZWPQJAQGXASJDBKWUAP.webp",
+      "alt": "Marble Race",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://ss.manage63.com/south247/livecasinolobbyimages/imgi_8_f567154d09.webp",
+      "alt": "Super Color Game",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://ss.manage63.com/south247/livecasinolobbyimages/Aviator%20(AviatroStudios)%206.1.webp",
+      "alt": "Aviator",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/turbo-games-vortex-12929.webp",
+      "alt": "Vortex",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/smartsoft-gaming-jetx.webp",
+      "alt": "Jet X",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/turbogames-aero.webp",
+      "alt": "Aero",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/aviatrix-nft-aviatrix.webp",
+      "alt": "Aviatrix",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/gamzix-pilot.webp",
+      "alt": "Pilot",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/spribe-aviator.webp",
+      "alt": "Aviator",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://ss.manage63.com/south247/livecasinolobbyimages/imgi_72_b5d25ed060.png",
+      "alt": "Aviamasters",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/inout-games-ballonix.webp",
+      "alt": "BalloniX",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/inout-games-aviafly.webp",
+      "alt": "Aviafly",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/fugaso-magnify-man-old.webp",
+      "alt": "Magnify Man",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/smartsoft-gaming-cricketx.webp",
+      "alt": "Cricket X",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/inout-games-crash.webp",
+      "alt": "Crash",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://ss.manage63.com/south247/livecasinolobbyimages/inout-games-aviafly-2.png",
+      "alt": "Avia Fly 2",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/inout-games-sugar-daddy.webp",
+      "alt": "Sugar Daddy",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://ss.manage63.com/south247/livecasinolobbyimages/PilotChicken.webp",
+      "alt": "Pilot Chicken",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/inout-games-bubbles.webp",
+      "alt": "Bubbles",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/smartsoft-gaming-crash-duel-x.webp",
+      "alt": "Crash Duel X",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://ss.manage63.com/south247/livecasinolobbyimages/Trader.webp",
+      "alt": "Trader",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/smartsoft-gaming-smash-x.webp",
+      "alt": "Smash X",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://ss.manage90.com/panel-wl/commonAssets/viewAll_image.png",
+      "alt": "",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/turbogames-chicken-route.webp",
+      "alt": "Chicken Route",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/smartsoft-gaming-plinkox.png",
+      "alt": "Plinko X",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/caleta-gaming-bingo-genio.webp",
+      "alt": "Bingo Genio",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/caleta-gaming-bingo-pirata.webp",
+      "alt": "Bingo Pirata",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/caleta-gaming-bingolaco.webp",
+      "alt": "Bingolaco",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/hacksaw-gaming-stickem.webp",
+      "alt": "Stickem",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/nolimit-city-casino-win-spin.webp",
+      "alt": "Casino Win Spin",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/caleta-gaming-jingle-bell-bingo.webp",
+      "alt": "Jingle Bell Bingo",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/smartsoft-gaming-towerx.webp",
+      "alt": "Tower X",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/caleta-gaming-bingolicia.webp",
+      "alt": "Bingolicia",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/turbo-games-cricket-boom-12940.webp",
+      "alt": "Cricket Boom",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/turbo-games-catanza-12939.webp",
+      "alt": "Catanza",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/turbo-games-bubbles-12927.webp",
+      "alt": "Bubbles",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/turbo-games-ball-&-ball-12910.webp",
+      "alt": "BallBall",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://ss.manage63.com/south247/livecasinolobbyimages/Hotline.webp",
+      "alt": "Hotline",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/2026-08/1786086167334_569530_XTYZHEGJEXHJYXCCZNAHDWUKK.webp",
+      "alt": "Aalam Doodh Soda",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://ss.manage63.com/south247/livecasinolobbyimages/Paper%20Toss%20(new).webp",
+      "alt": "Paper Toss",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://ss.manage63.com/south247/livecasinolobbyimages/Rock%20Paper%20Scissors%20(New).webp",
+      "alt": "Rock Paper Scissors",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://ss.manage63.com/south247/livecasinolobbyimages/CockFighting.webp",
+      "alt": "Cock Fighting",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/sp-gaming-shark-rush.webp",
+      "alt": "Shark Rush",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://ss.manage90.com/panel-wl/commonAssets/viewAll_image.png",
+      "alt": "",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/el-casino-wheel-roulette-11591.webp",
+      "alt": "Wheel Roulette",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/WonderlandLuckyBall.webp",
+      "alt": "Wonderland Lucky Ball",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://ss.manage63.com/south247/livecasinolobbyimages/SpinAndWinWild.webp",
+      "alt": "Spin A Win Wild Live",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://ss.manage63.com/south247/livecasinolobbyimages/MegaFireblazeBlackjackLive.webp",
+      "alt": "Mega Fire Blaze Blackjack Live",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://ss.manage63.com/south247/livecasinolobbyimages/EZMarbleRaceMonaco.webp",
+      "alt": "EZ Marble Race Monaco",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://ss.manage63.com/south247/livecasinolobbyimages/AdventuresBeyondWonderland.webp",
+      "alt": "Adventures Beyond Wonderland Live",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/pragmatic-play-money-time.webp",
+      "alt": "Money Time",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://ss.manage63.com/south247/livecasinolobbyimages/The-Greatest-Card-Game.webp",
+      "alt": "The Greatest Cards Show",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/pragmatic-play-24d-spin.webp",
+      "alt": "24D Spin",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://ss.manage63.com/south247/livecasinolobbyimages/SpinWin.webp",
+      "alt": "Spin a Win",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://ss.manage63.com/south247/livecasinolobbyimages/EZMarbleRaceLasVegas.webp",
+      "alt": "EZ Marble Race Las Vegas",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://ss.manage63.com/south247/livecasinolobbyimages/MegaFireblazeRouletteLive.webp",
+      "alt": "Mega Fire Blaze Roulette Live",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/RichieWheel%202.webp",
+      "alt": "Richie Wheel",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/pragmatic-play-powerup-roulette.webp",
+      "alt": "PowerUP Roulette",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/pragmatic-play-fortune-roulette.webp",
+      "alt": "Fortune Roulette",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/pragmatic-play-lucky-6-roulette.webp",
+      "alt": "Lucky 6 Roulette",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/pragmatic-play-mega-roulette.webp",
+      "alt": "Mega Roulette",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/pragmatic-play-mega-wheel.webp",
+      "alt": "Mega Wheel",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/pragmatic-play-snakes-&-ladders-live.webp",
+      "alt": "Snakes Ladders Live",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/pragmatic-play-sweet-bonanza-candyland.webp",
+      "alt": "Sweet Bonanza Candyland",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://ss.manage90.com/panel-wl/commonAssets/viewAll_image.png",
+      "alt": "",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://ss.manage63.com/south247/fawkcasino/games/aura-gaming-3-cards-judgement.webp",
+      "alt": "3 Cards Judgement",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://ss.manage63.com/south247/fawkcasino/games/aura-gaming-bollywood-casino.webp",
+      "alt": "Bollywood Casino",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://ss.manage63.com/south247/fawkcasino/games/aura-gaming-amar-akbar-anthony.webp",
+      "alt": "Amar Akbar Anthony",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/aura-32-cards-casino.webp",
+      "alt": "32 Cards Casino",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/aura_andar_bahar.webp",
+      "alt": "Andar Bahar",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/aura_teenpatti_t20.webp",
+      "alt": "Teenpatti T20",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/aura_hi_low.webp",
+      "alt": "Hi Low",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/aura_live_teenpatti.webp",
+      "alt": "Live Teenpatti",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/aura_worli_matka.webp",
+      "alt": "Worli Matka",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/aura_7_up_&_down.webp",
+      "alt": "7 Up and Down",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/aura_muflis_teenpatti.webp",
+      "alt": "Muflis Teenpatti",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/aura_2_cards_teenpatti.webp",
+      "alt": "2 Cards Teenpatti",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/royal-gaming-lucky7.webp",
+      "alt": "Lucky 7",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/royal-gaming-center-card.webp",
+      "alt": "Center Card",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/royal-gaming-trio.webp",
+      "alt": "Trio",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/royal-gaming-akbar-romeo-walter.webp",
+      "alt": "Akbar Romeo Walter",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/royal-gaming-high-low.webp",
+      "alt": "High Low",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/royal-gaming-bollywood-casino.webp",
+      "alt": "Bollywood Casino",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/royal-gaming-casino-war.webp",
+      "alt": "Casino War",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/royal-gaming-3-cards-judgement.webp",
+      "alt": "3 Cards Judgement",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://ss.manage90.com/panel-wl/commonAssets/viewAll_image.png",
+      "alt": "",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://ss.manage63.com/south247/livecasinolobbyimages/American%20Roulette.webp",
+      "alt": "American Roulette",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://ss.manage63.com/south247/fawkcasino/games/Roulette.webp",
+      "alt": "Roulette",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/ezugi-bet-with-streamers-1756.webp",
+      "alt": "Bet with Streamers",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://ss.manage63.com/south247/livecasinolobbyimages/Las%20Vegas%20Roulette.webp",
+      "alt": "Las Vegas Roulette",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/ezugi-lucky-7.webp",
+      "alt": "Lucky 7",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/ezugi-baccarat.webp",
+      "alt": "Baccarat",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/pragmatic-play-andar-bahar.webp",
+      "alt": "Andar Bahar",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/ezugi-mambo-unlimited-blackjack.webp",
+      "alt": "Mambo Unlimited Blackjack",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/vivo-gaming-american-auto-roulette-11505.webp",
+      "alt": "American Auto Roulette",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/royal-gaming-auto-roulette.webp",
+      "alt": "Auto Roulette",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/aura_sicbo.webp",
+      "alt": "Sicbo",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/royal-gaming-diamond-roulette.webp",
+      "alt": "Diamond Roulette",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/royal-gaming-lightning-roulette.webp",
+      "alt": "Lightning Roulette",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/ezugi-rumba-blackjack-2.webp",
+      "alt": "Rumba Blackjack 2",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://ss.manage63.com/south247/livecasinolobbyimages/pragmatic-play-prive%E2%95%A0%C3%BC-lounge-blackjack-11.webp",
+      "alt": "Priv Lounge Blackjack 11",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/pragmatic-play-korean-blackjack-1.webp",
+      "alt": "Korean Blackjack 1",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/pragmatic-play-korean-blackjackx-1.webp",
+      "alt": "Korean Blackjack X 1",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/pragmatic-play-korean-blackjackx-2.webp",
+      "alt": "Korean Blackjack X 2",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/pragmatic-play-korean-blackjackx-3.webp",
+      "alt": "Korean Blackjack X 3",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/pragmatic-play-korean-speed-blackjack-1.webp",
+      "alt": "Korean Speed Blackjack 1",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://ss.manage90.com/panel-wl/commonAssets/viewAll_image.png",
+      "alt": "",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/smartsoft-gaming-wild-boka-jamba-10.webp",
+      "alt": "Boka Jamba 10",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/nolimit-city-bangkok-hilton.webp",
+      "alt": "Bangkok Hilton",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/smartsoft-gaming-multi-hot-wild-ways.webp",
+      "alt": "Multi Hot Wild Ways",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://ss.manage63.com/south247/livecasinolobbyimages/AstroPop.jpg",
+      "alt": "Astro Pop",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/smartsoft-gaming-jingle-bell-bonanza.webp",
+      "alt": "Jingle Bell Bonanza",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/booming-games-black-friday-cart-craze.webp",
+      "alt": "Black Friday Cart Craze",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/booming-games-asia-wins.webp",
+      "alt": "Asia Wins",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/habanero-infernal-fury.webp",
+      "alt": "Infernal Fury",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/TreasureFortune.webp",
+      "alt": "Mr Treasures Fortune",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/smartsoft-gaming-multihot5.webp",
+      "alt": "Multi Hot 5",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/betsoft-barbary-coast.webp",
+      "alt": "Barbary Coast",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://ss.manage63.com/south247/livecasinolobbyimages/101.webp",
+      "alt": "Medusa II",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/gamzix-buffalo-coin-hold-the-spin.webp",
+      "alt": "Buffalo Coin Hold The Spin",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/wazdan-9-coins.webp",
+      "alt": "9 Coins",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://ss.manage63.com/south247/livecasinolobbyimages/pgsoft-knockout-riches.webp",
+      "alt": "Knockout Riches",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/betsoft-jungle-stripes.webp",
+      "alt": "Jungle Stripes",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://ss.manage63.com/south247/livecasinolobbyimages/Loli%20Pop.png",
+      "alt": "Lolli Pop",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/nolimit-city-coins-of-fortune.webp",
+      "alt": "Coins of Fortune",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/playtech-stars-ablaze.webp",
+      "alt": "Stars Ablaze",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/playtech-panther-pays.webp",
+      "alt": "Panther Pays",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://ss.manage90.com/panel-wl/commonAssets/viewAll_image.png",
+      "alt": "",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/betsoft-oasis-poker.webp",
+      "alt": "Oasis Poker",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/pgsoft-dragon-tiger-luck.webp",
+      "alt": "Dragon Tiger Luck",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://ss.manage63.com/south247/livecasinolobbyimages/VirtualTeenpatti.webp",
+      "alt": "Virtual Teen Patti",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/pgsoft-win-win-fish-prawn-crab.webp",
+      "alt": "Win Win Fish Prawn Crab",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/habanero-three-card-poker.webp",
+      "alt": "Three Card Poker",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/habanero-sic-bo.webp",
+      "alt": "Sic Bo",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/betsoft-american-blackjack.webp",
+      "alt": "American Blackjack",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/habanero-caribbean-stud.webp",
+      "alt": "Caribbean Stud",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/inout-games-joker-poker.webp",
+      "alt": "Joker Poker",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/habanero-double-double-bonus-poker-10-hand.webp",
+      "alt": "Double Double Bonus Poker 10 Hand",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/habanero-joker-poker-10-hand.webp",
+      "alt": "Joker Poker 10 Hand",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/habanero-jacks-or-better-50-hand.webp",
+      "alt": "Jacks or Better 50 Hand",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/habanero-bonus-poker-10-hand.webp",
+      "alt": "Bonus Poker 10 Hand",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/habanero-jacks-or-better-5-hand.webp",
+      "alt": "Jacks or Better 5 Hand",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/habanero-bonus-poker-100-hand.webp",
+      "alt": "Bonus Poker 100 Hand",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/habanero-bonus-poker-5-hand.webp",
+      "alt": "Bonus Poker 5 Hand",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/habanero-jacks-or-better-100-hand.webp",
+      "alt": "Jacks or Better 100 Hand",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/habanero-jacks-or-better-10-hand.webp",
+      "alt": "Jacks or Better 10 Hand",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/royal-gaming-roulette-fusion.webp",
+      "alt": "Roulette Fusion",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://images.casinoexch.com/game/habanero-bonus-poker-50-hand.webp",
+      "alt": "Bonus Poker 50 Hand",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://ss.manage90.com/panel-wl/commonAssets/viewAll_image.png",
+      "alt": "",
+      "className": "",
+      "parentClass": "active"
+    },
+    {
+      "src": "https://ss.manage90.com/panel-wl/commonAssets/whatsapp-icon.svg",
+      "alt": "WhatsApp",
+      "className": "",
+      "parentClass": "btn-wrap whatsapp"
+    },
+    {
+      "src": "https://ss.manage90.com/panel-wl/commonAssets/casino-icon.svg",
+      "alt": "",
+      "className": "",
+      "parentClass": ""
+    },
+    {
+      "src": "https://ss.manage90.com/panel-wl/commonAssets/go-casino-icon.svg",
+      "alt": "",
+      "className": "",
+      "parentClass": ""
+    },
+    {
+      "src": "https://ss.manage90.com/panel-wl/commonAssets/go-crash-icon.svg",
+      "alt": "",
+      "className": "",
+      "parentClass": ""
+    },
+    {
+      "src": "https://ss.manage90.com/panel-wl/commonAssets/chips-header-icon.svg",
+      "alt": "",
+      "className": "",
+      "parentClass": ""
+    },
+    {
+      "src": "https://cdnimg.manage63.com/cricflags/trophy.svg",
+      "alt": "",
+      "className": "",
+      "parentClass": ""
+    },
+    {
+      "src": "https://cdnimg.manage63.com/games_icon/ball.svg",
+      "alt": "",
+      "className": "",
+      "parentClass": ""
+    },
+    {
+      "src": "https://cdnimg.manage63.com/games_icon/soccer.svg",
+      "alt": "",
+      "className": "",
+      "parentClass": ""
+    },
+    {
+      "src": "https://cdnimg.manage63.com/games_icon/tennis.svg",
+      "alt": "",
+      "className": "",
+      "parentClass": ""
+    },
+    {
+      "src": "https://fonts.gstatic.com/s/i/productlogos/translate/v14/24px.svg",
+      "alt": "",
+      "className": "",
+      "parentClass": "VIpgJd-yAWNEb-hvhgNd-Ud7fr"
+    }
+  ]
+}

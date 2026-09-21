@@ -1,0 +1,65 @@
+:root {
+  /* GoPanel Base Palette */
+  --grey-00: #111111;
+  --grey-50: #171717;
+  --grey-75: #1e1e1e;
+  --grey-100: #2a2a2a;
+  --grey-200: #393939;
+  --grey-300: #5f5f5f;
+  --grey-400: #858585;
+  --grey-500: #a1a1a1;
+  --grey-600: #bebebe;
+  --grey-700: #cdcdcd;
+  --grey-800: #d5d5d5;
+  --grey-900: #f1f1f1;
+
+  --header-dark-color: #14171d;
+  --black-color: #000000;
+  --white-color: #ffffff;
+
+  /* Exchange Odds Boxes */
+  --back-color: #a0d8fb;
+  --back-color-dark: #6eb7eb;
+  --back-color-light: #f2f9ff;
+  --back-light: #d4e8f8;
+  --back-text: #053b61;
+
+  --lay-color: #fdc9d4;
+  --lay-color-dark: #f09cb0;
+  --lay-color-light: #fff3f4;
+  --lay-light: #f7e7eb;
+  --lay-text: #6e1325;
+
+  /* AllBazi Brand Orange & Gold Theme */
+  --secondary-color: #ff9900;
+  --secondary-color-contrast: #000000;
+  --primary-color: #000000;
+  --primary-color-shade: #141414;
+  --primary-color-tint: #222222;
+  --primary-color-contrast: #ffffff;
+  --highlight-color: #ffb800;
+
+  --brand-orange-light: #ff7a00;
+  --brand-orange-deep: #ff4500;
+  --brand-gold: #ffc629;
+  --brand-gradient: linear-gradient(135deg, #ff4500 0%, #ff8c00 45%, #ffc629 100%);
+  --brand-gradient-hover: linear-gradient(135deg, #ff5511 0%, #ffa011 50%, #ffd040 100%);
+  --glow-orange: rgba(255, 140, 0, 0.4);
+
+  /* Status Colors */
+  --green-color: #138807;
+  --green-glow: #1cd40a;
+  --green-100: #cbedc2;
+  --red-color: #c44141;
+  --marquee-red: #f44242;
+  --yellow-color: #e7a22a;
+  --blue-color: #31a8df;
+
+  /* Containers & Layout */
+  --max-app-width: 768px;
+  --vh: 1vh;
+  --radius-sm: 4px;
+  --radius-md: 8px;
+  --radius-lg: 12px;
+  --radius-pill: 50px;
+}

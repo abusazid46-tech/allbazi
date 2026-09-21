@@ -1,0 +1,15 @@
+{
+  "name": "allbazi-platform",
+  "version": "1.0.0",
+  "description": "AllBazi - All Original ID Panels Sportsbook & Exchange Platform",
+  "main": "server/server.js",
+  "scripts": {
+    "start": "node server/server.js",
+    "dev": "node server/server.js"
+  },
+  "dependencies": {
+    "cors": "^2.8.5",
+    "express": "^4.21.2",
+    "puppeteer-core": "^25.11.0"
+  }
+}

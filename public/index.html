@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <title>AllBazi | All Original ID panels - Sportsbook & Exchange</title>
+  
+  <link rel="icon" type="image/jpeg" href="assets/logo.jpg">
+  
+  <!-- Modern Typography -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;500;600;700;800;900&family=Roboto:wght@400;500;700;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/variables.css">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+  <!-- ============================================================
+       PREBOOT SPLASH LOADER
+  ============================================================ -->
+  <div id="preboot-loader">
+    <div class="loader-logo-wrap">
+      <img src="assets/logo.jpg" alt="AllBazi Logo">
+    </div>
+    <div class="spinner-conic"></div>
+  </div>
+
+  <!-- ============================================================
+       APP CONTAINER (GoPanel 768px Architecture)
+  ============================================================ -->
+  <div class="app-container" id="app-container">
+
+    <!-- HOME VIEW -->
+    <div id="view-home">
+      
+      <!-- Top Yellow Hero Banner & 3-Part Wallet Card -->
+      <section class="top-hero-banner">
+        <div class="top-nav-bar">
+          <!-- White Circle with 3 Gold Horizontal Bars (GoPanel Exact) -->
+          <button class="btn-hamburger-circle" id="btn-hamburger" title="Open Navigation Menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+
+          <div class="top-auth-actions">
+            <button class="btn-auth-pill btn-login-signup" id="btn-top-login">Login | Signup</button>
+            <button class="btn-auth-pill btn-demo-id" id="btn-top-demo">Demo ID</button>
+            <div class="lang-selector" id="btn-lang-toggle" title="Change Language">
+              <svg viewBox="0 0 24 24" width="22" height="22" fill="none" stroke="#ffffff" stroke-width="1.8" stroke-linecap="round">
+                <circle cx="12" cy="12" r="10"/>
+                <line x1="2" y1="12" x2="22" y2="12"/>
+                <path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"/>
+              </svg>
+              <span id="lang-code-text">EN</span>
+            </div>
+          </div>
+        </div>
+
+        <!-- 3-Wing Center Wallet Widget (GoPanel Exact Architecture) -->
+        <div class="wallet-hero-container">
+          <!-- Left Wing: Deposit -->
+          <div class="wallet-wing-btn left" id="btn-wing-deposit" title="Deposit Funds">
+            <span class="wing-label">Deposit</span>
+            <img src="assets/arrow-up.svg" alt="Deposit" class="wing-chevron-img">
+          </div>
+
+          <!-- Center Dominant Card: AllBazi Brand & Wallet Balance -->
+          <div class="wallet-center-card" id="btn-center-wallet" title="Account Balance">
+            <img src="assets/logo.jpg" alt="AllBazi" class="brand-logo-img">
+            <span class="wallet-balance-title">WALLET BALANCE</span>
+            <div class="wallet-balance-amount-row">
+              <img src="assets/coins-icon.png" alt="Coins" class="coins-stack-img">
+              <span class="wallet-balance-num" id="hero-balance-num">0</span>
+            </div>
+          </div>
+
+          <!-- Right Wing: Withdraw -->
+          <div class="wallet-wing-btn right" id="btn-wing-withdraw" title="Withdraw Funds">
+            <span class="wing-label">Withdraw</span>
+            <img src="assets/arrow-down.svg" alt="Withdraw" class="wing-chevron-img">
+          </div>
+        </div>
+      </section>
+
+      <!-- Promotional Hero Carousel Banner (4 Sliding Banners GoPanel Exact) -->
+      <section class="promo-carousel-wrap" id="promo-carousel">
+        <div class="carousel-track" id="hero-carousel-track">
+          <div class="carousel-slide active">
+            <img src="assets/hero_banner_4.jpeg" alt="Aviator Crash Game of the Year" class="promo-banner-img">
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/hero_banner_1.jpeg" alt="Sexy Play Live With Our Hot Dealers" class="promo-banner-img">
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/hero_banner_2.jpeg" alt="Turbo Games The Choice of 13M Players Vortex" class="promo-banner-img">
+          </div>
+          <div class="carousel-slide">
+            <img src="assets/hero_banner_3.jpeg" alt="Chicken Road 2.0 Instant Game" class="promo-banner-img">
+          </div>
+        </div>
+        <div class="promo-dots">
+          <div class="promo-dot active" data-slide="0"></div>
+          <div class="promo-dot" data-slide="1"></div>
+          <div class="promo-dot" data-slide="2"></div>
+          <div class="promo-dot" data-slide="3"></div>
+        </div>
+      </section>
+
+      <!-- Quick Action Feature Buttons (Create Panel, Aviator, Chicken Road 2.0) -->
+      <section class="quick-actions-row">
+        <button class="action-card card-create-panel" id="btn-action-create-panel" title="Create Your Master ID Panel">
+          <span>Create Panel</span>
+        </button>
+        <button class="action-card card-aviator" id="btn-action-aviator" title="Play Aviator">
+          <img src="assets/aviator_text.png" alt="Aviator" class="aviator-logo-img">
+          <img src="assets/aviator_icon.png" alt="Airplane" class="aviator-plane-img">
+        </button>
+        <button class="action-card card-chicken-road" id="btn-action-chicken-road" title="Play Chicken Road 2.0">
+          <img src="assets/chickenroad_text.png" alt="Chicken Road 2.0" class="chicken-text-img">
+          <img src="assets/chickenroad_icon.png" alt="Chicken" class="chicken-icon-img">
+        </button>
+      </section>
+
+      <!-- Search Matches / Casino Games Bar -->
+      <section class="search-wrapper">
+        <div class="search-box-pill">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#555555" stroke-width="2.5" stroke-linecap="round">
+            <circle cx="11" cy="11" r="7"/>
+            <line x1="16.5" y1="16.5" x2="21" y2="21"/>
+          </svg>
+          <input type="text" class="search-input-field" id="search-input-field" placeholder="Search Matches / Casino Games" autocomplete="off">
+          <button id="search-clear-btn" style="display:none; background:transparent; border:none; color:#888; font-size:14px; cursor:pointer;">✕</button>
+        </div>
+      </section>
+
+      <!-- Casino Providers Horizontal Carousel -->
+      <section class="section-headline-bar">
+        <span class="headline-text">Casino Providers</span>
+        <a href="javascript:void(0)" class="headline-link-all" data-nav="casino">
+          <span>All</span>
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"/>
+          </svg>
+        </a>
+      </section>
+      <div class="providers-pill-row">
+        <div class="provider-chip active" data-provider="sexy">
+          <span class="provider-icon-badge pink-flame">🔥</span>
+          <span class="provider-name-txt">Sexy</span>
+        </div>
+        <div class="provider-chip" data-provider="inout">
+          <span class="provider-icon-badge yellow-in">IN</span>
+          <span class="provider-name-txt">Inout Games</span>
+        </div>
+        <div class="provider-chip" data-provider="turbogames">
+          <span class="provider-icon-badge red-x">✖</span>
+          <span class="provider-name-txt">Turbogames</span>
+        </div>
+        <div class="provider-chip" data-provider="pragmatic">
+          <span class="provider-icon-badge gold-crown">👑</span>
+          <span class="provider-name-txt">Pragmatic</span>
+        </div>
+        <div class="provider-chip" data-provider="evolution">
+          <span class="provider-icon-badge blue-die">🎲</span>
+          <span class="provider-name-txt">Evolution</span>
+        </div>
+        <div class="provider-chip" data-provider="smartsoft">
+          <span class="provider-icon-badge purple-jet">🚀</span>
+          <span class="provider-name-txt">Smartsoft</span>
+        </div>
+        <div class="provider-chip" data-provider="ezugi">
+          <span class="provider-icon-badge black-spade">♠</span>
+          <span class="provider-name-txt">Ezugi</span>
+        </div>
+      </div>
+
+      <!-- Cricket Matches Section -->
+      <section class="section-headline-bar">
+        <span class="headline-text">Cricket</span>
+        <a href="javascript:void(0)" class="headline-link-all" data-nav="sports">
+          <span>All</span>
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"/>
+          </svg>
+        </a>
+      </section>
+      <div class="sports-table-container">
+        <div class="table-header-row">
+          <div class="th-time">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="#666666" stroke-width="2" stroke-linecap="round">
+              <circle cx="12" cy="12" r="9"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <div class="th-teams">Teams</div>
+          <div class="th-back">Back</div>
+          <div class="th-lay">Lay</div>
+        </div>
+
+        <div class="table-body" id="cricket-table-rows">
+          <!-- Rendered by JS matching exact GoPanel cricket fixtures -->
+        </div>
+      </div>
+
+      <!-- Soccer Matches Section -->
+      <section class="section-headline-bar">
+        <span class="headline-text">Soccer</span>
+        <a href="javascript:void(0)" class="headline-link-all" data-nav="sports">
+          <span>All</span>
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"/>
+          </svg>
+        </a>
+      </section>
+      <div class="sports-table-container">
+        <div class="table-header-row">
+          <div class="th-time">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="#666666" stroke-width="2" stroke-linecap="round">
+              <circle cx="12" cy="12" r="9"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <div class="th-teams">Teams</div>
+          <div class="th-back">Back</div>
+          <div class="th-lay">Lay</div>
+        </div>
+
+        <div class="table-body" id="soccer-table-rows">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+
+      <!-- Tennis Matches Section -->
+      <section class="section-headline-bar">
+        <span class="headline-text">Tennis</span>
+        <a href="javascript:void(0)" class="headline-link-all" data-nav="sports">
+          <span>All</span>
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"/>
+          </svg>
+        </a>
+      </section>
+      <div class="sports-table-container">
+        <div class="table-header-row">
+          <div class="th-time">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="#666666" stroke-width="2" stroke-linecap="round">
+              <circle cx="12" cy="12" r="9"/>
+              <polyline points="12 6 12 12 16 14"/>
+            </svg>
+          </div>
+          <div class="th-teams">Teams</div>
+          <div class="th-back">Back</div>
+          <div class="th-lay">Lay</div>
+        </div>
+
+        <div class="table-body" id="tennis-table-rows">
+          <!-- Rendered by JS -->
+        </div>
+      </div>
+
+      <!-- Mini Games Section in Home -->
+      <section class="section-headline-bar">
+        <span class="headline-text">Mini Games</span>
+        <a href="javascript:void(0)" class="headline-link-all" data-nav="casino">
+          <span>All</span>
+          <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <polyline points="9 18 15 12 9 6"/>
+          </svg>
+        </a>
+      </section>
+      <div class="mini-games-scroll" style="padding: 0 12px 16px 12px;" id="home-mini-games-scroll">
+        <!-- Rendered by JS with authentic GoPanel games -->
+      </div>
+
+    </div>
+
+    <!-- MATCH DETAIL VIEW (Exact GoPanel Match Detail View) -->
+    <div id="view-match-detail" class="match-detail-page">
+      <!-- Detail Top Bar -->
+      <div class="detail-top-bar">
+        <button class="btn-yellow-back" id="btn-detail-back" title="Back to Matches">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#FFC629" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="19" y1="12" x2="5" y2="12"/>
+            <polyline points="12 19 5 12 12 5"/>
+          </svg>
+        </button>
+        <img src="assets/logo.jpg" alt="AllBazi" style="height: 32px; border-radius: 6px;">
+        <div class="top-auth-actions">
+          <button class="btn-auth-pill btn-login-signup" id="btn-detail-login">Login | Signup</button>
+          <button class="btn-auth-pill btn-demo-id" id="btn-detail-demo">Demo ID</button>
+        </div>
+      </div>
+
+      <!-- Info Sub-Header -->
+      <div class="detail-info-strip">
+        <div style="display: flex; align-items: center; gap: 6px;">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="#FFC629">
+            <circle cx="12" cy="12" r="10" fill="none" stroke="#FFC629" stroke-width="2"/>
+            <line x1="12" y1="11" x2="12" y2="17" stroke="#FFC629" stroke-width="2.5" stroke-linecap="round"/>
+            <circle cx="12" cy="7" r="1.5" fill="#FFC629"/>
+          </svg>
+          <span id="detail-match-title-strip" style="font-weight: 700; font-size: 11px;">Antigua & Barbuda Falcs v Jamaica Kingsmen</span>
+        </div>
+        <span id="detail-match-time-strip" style="color: #999999; font-size: 10px;">Started at 4:30am IST</span>
+      </div>
+
+      <!-- Market / Open Bets Tabs -->
+      <div class="detail-nav-tabs">
+        <div style="display: flex; gap: 8px;">
+          <div class="detail-tab-item active" id="tab-detail-market">MARKET</div>
+          <div class="detail-tab-item" id="tab-detail-openbets">OPEN BETS (0)</div>
+        </div>
+        <div class="detail-tab-icons">
+          <div class="tab-circle-icon" title="Leaderboard / Fixture" id="btn-tab-fixture">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="currentColor">
+              <path d="M14.4 6L14 4H5v17h2v-7h5.6l.4 2h7V6z"/>
+            </svg>
+          </div>
+          <div class="tab-circle-icon" title="Rules" id="btn-tab-rules">
+            <svg viewBox="0 0 24 24" width="14" height="14" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+              <polyline points="14 2 14 8 20 8"/>
+              <line x1="16" y1="13" x2="8" y2="13"/>
+              <line x1="16" y1="17" x2="8" y2="17"/>
+              <polyline points="10 9 9 9 8 9"/>
+            </svg>
+          </div>
+        </div>
+      </div>
+
+      <!-- Scoreboard Box (GoPanel Exact Cricket Scorecard) -->
+      <div class="scoreboard-box" id="detail-scoreboard-container">
+        <div class="center-score-number" id="detail-score-center">0</div>
+        
+        <div class="score-teams-summary">
+          <div>
+            <span class="bat-icon">🏏</span>
+            <span id="detail-team1-name">Antigua Barbuda Falcons</span>
+            <div style="color: #FFC629; font-size: 13px; font-weight: 800;" id="detail-team1-score">158-2 (15.4) CRR: 10.09 | RRR: 2.77</div>
+          </div>
+          <div style="text-align: right;">
+            <span id="detail-team2-name">Jamaica Kingsmen</span>
+            <span style="font-size: 11px;">🔴</span>
+            <div style="color: #a0a6b5; font-size: 13px; font-weight: 800;" id="detail-team2-score">170-9</div>
+          </div>
+        </div>
+
+        <div class="score-banner-banner" id="detail-banner-text">13 required in 26 balls</div>
+
+        <div class="over-balls-wrap">
+          <span style="margin-right: 4px;">Previous over:</span>
+          <span class="over-ball-chip purple">6</span>
+          <span class="over-ball-chip green">1</span>
+          <span class="over-ball-chip green">1</span>
+          <span class="over-ball-chip blue">4</span>
+          <span class="over-ball-chip green">1</span>
+          <span class="over-ball-chip green">1</span>
+
+          <span style="margin-left: 10px; margin-right: 4px;">Current over:</span>
+          <span class="over-ball-chip green">1</span>
+          <span class="over-ball-chip green">1</span>
+          <span class="over-ball-chip blue">4</span>
+          <span class="over-ball-chip zero">0</span>
+        </div>
+      </div>
+
+      <!-- Open Bets Tab View (Initially hidden) -->
+      <div id="detail-openbets-container" style="display:none; padding: 14px 12px;">
+        <div id="detail-openbets-list"></div>
+      </div>
+
+      <!-- Market Container -->
+      <div id="detail-market-container">
+        <!-- BOOKMAKER Section -->
+        <div class="market-card-block">
+          <div class="market-card-header">
+            <span>BOOKMAKER</span>
+            <button class="btn-cashout-pill" id="btn-cashout-bm">Cashout</button>
+          </div>
+          <div class="market-sub-limit">
+            <span>Min: 100 | Max: 5L</span>
+            <div style="display: flex; gap: 4px; width: 112px; justify-content: space-around;">
+              <span style="color: #053b61;">Back</span>
+              <span style="color: #6e1325;">Lay</span>
+            </div>
+          </div>
+          <div id="bookmaker-rows-container">
+            <!-- Rendered by JS -->
+          </div>
+        </div>
+
+        <!-- TIED MATCH Section -->
+        <div class="market-card-block">
+          <div class="market-card-header">
+            <span>TIED MATCH</span>
+            <button class="btn-cashout-pill" id="btn-cashout-tied">Cashout</button>
+          </div>
+          <div class="market-sub-limit">
+            <span>Min: 100 | Max: 1L</span>
+            <div style="display: flex; gap: 4px; width: 112px; justify-content: space-around;">
+              <span style="color: #053b61;">Back</span>
+              <span style="color: #6e1325;">Lay</span>
+            </div>
+          </div>
+          <div id="tied-match-rows-container">
+            <!-- Rendered by JS -->
+          </div>
+        </div>
+
+        <!-- MINI GAMES Horizontal Section -->
+        <div class="mini-games-container">
+          <div class="mini-games-header">
+            <span>MINI GAMES</span>
+            <button class="btn-cashout-pill" style="background: #333842;" id="btn-mini-lobby">Lobby ▾</button>
+          </div>
+          <div class="mini-games-scroll" id="detail-mini-games-scroll">
+            <!-- Rendered by JS -->
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+    <!-- Floating WhatsApp Support Button (GoPanel Exact) -->
+    <a href="https://wa.me/?text=Hello%20AllBazi%20Support%2C%20I%20want%20to%20get%20my%20Original%20ID%20Panel" target="_blank" class="floating-whatsapp-btn" title="Chat on WhatsApp" id="btn-floating-whatsapp">
+      <svg viewBox="0 0 24 24">
+        <path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.893 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.884-.001 2.225.651 3.891 1.746 5.634l-.999 3.648 3.742-.981zm11.387-5.464c-.074-.124-.272-.198-.57-.347-.297-.149-1.758-.868-2.031-.967-.272-.099-.47-.149-.669.149-.198.297-.768.967-.941 1.165-.173.198-.347.223-.644.074-.297-.149-1.255-.462-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.297-.347.446-.521.151-.172.2-.296.3-.495.099-.198.05-.372-.025-.521-.075-.148-.669-1.611-.916-2.206-.242-.579-.487-.501-.669-.51l-.57-.01c-.198 0-.52.074-.792.372s-1.04 1.016-1.04 2.479 1.065 2.876 1.213 3.074c.149.198 2.095 3.2 5.076 4.487.709.306 1.263.489 1.694.626.712.226 1.36.194 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.695.248-1.29.173-1.414z"/>
+      </svg>
+    </a>
+
+    <!-- Bottom Navigation Bar (Solid Black 5 Items Exact GoPanel) -->
+    <nav class="bottom-nav-bar">
+      <div class="bottom-nav-item active" data-nav="home" id="nav-item-home">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+          <path d="M10 20v-6h4v6h5v-8h3L12 3 2 12h3v8z"/>
+        </svg>
+        <span>Home</span>
+      </div>
+      <div class="bottom-nav-item" data-nav="sports" id="nav-item-sports">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+          <path d="M19 5h-2V3H7v2H5c-1.1 0-2 .9-2 2v1c0 2.55 1.92 4.63 4.39 4.94A5.01 5.01 0 0 0 11 15.9V19H8v2h8v-2h-3v-3.1c1.8-.31 3.23-1.66 3.61-3.41C19.08 12.18 21 10.1 21 8V7c0-1.1-.9-2-2-2zM5 8V7h2v3.82C5.84 10.4 5 9.3 5 8zm14 0c0 1.3-.84 2.4-2 2.82V7h2v1z"/>
+        </svg>
+        <span>Sports</span>
+      </div>
+      <div class="bottom-nav-item" data-nav="casino" id="nav-item-casino">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+          <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-7 4c.83 0 1.5.67 1.5 1.5S12.83 10 12 10s-1.5-.67-1.5-1.5S11.17 7 12 7zm-4 8c-.83 0-1.5-.67-1.5-1.5S7.17 12 8 12s1.5.67 1.5 1.5S8.83 15 8 15zm8 0c-.83 0-1.5-.67-1.5-1.5s.67-1.5 1.5-1.5 1.5.67 1.5 1.5-.67 1.5-1.5 1.5z"/>
+        </svg>
+        <span>Casino</span>
+      </div>
+      <div class="bottom-nav-item" data-nav="inplay" id="nav-item-inplay">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+          <path d="M8 5v14l11-7z"/>
+        </svg>
+        <span>Inplay</span>
+      </div>
+      <div class="bottom-nav-item" data-nav="panels" id="nav-item-panels">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+          <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm-5 14H7v-2h7v2zm3-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+        </svg>
+        <span>Panels</span>
+      </div>
+    </nav>
+
+  </div>
+
+  <!-- ============================================================
+       SLIDE-UP BET SLIP
+  ============================================================ -->
+  <div class="betslip-backdrop" id="betslip-backdrop"></div>
+  <div class="betslip-drawer" id="betslip-drawer">
+    <div class="betslip-header-bar" id="bs-header-bar">
+      <span id="bs-type-header">BACK (BET FOR)</span>
+      <button class="betslip-close-btn" id="bs-close-btn" title="Close Bet Slip">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round">
+          <line x1="18" y1="6" x2="6" y2="18"/>
+          <line x1="6" y1="6" x2="18" y2="18"/>
+        </svg>
+      </button>
+    </div>
+
+    <div class="betslip-body">
+      <div class="betslip-match-title" id="bs-match-title">Antigua & Barbuda Falcs v Jamaica Kingsmen</div>
+      <div class="betslip-runner-title" id="bs-runner-title">Antigua & Barbuda Falcs</div>
+
+      <div class="steppers-row">
+        <div class="stepper-box">
+          <div class="stepper-label">Odds</div>
+          <div class="stepper-input-group">
+            <button class="stepper-btn" id="bs-odds-minus">-</button>
+            <input type="number" step="0.01" class="stepper-input" id="bs-odds-input" value="1.85">
+            <button class="stepper-btn" id="bs-odds-plus">+</button>
+          </div>
+        </div>
+
+        <div class="stepper-box">
+          <div class="stepper-label">Stake (₹)</div>
+          <div class="stepper-input-group">
+            <button class="stepper-btn" id="bs-stake-minus">-</button>
+            <input type="number" step="100" class="stepper-input" id="bs-stake-input" value="500">
+            <button class="stepper-btn" id="bs-stake-plus">+</button>
+          </div>
+        </div>
+      </div>
+
+      <div class="chips-grid">
+        <button class="stake-chip" data-val="100">+100</button>
+        <button class="stake-chip" data-val="500">+500</button>
+        <button class="stake-chip" data-val="1000">+1K</button>
+        <button class="stake-chip" data-val="2500">+2.5K</button>
+        <button class="stake-chip" data-val="5000">+5K</button>
+        <button class="stake-chip" data-val="10000">+10K</button>
+        <button class="stake-chip" data-val="25000">+25K</button>
+        <button class="stake-chip" data-val="all">MAX</button>
+      </div>
+
+      <div class="pnl-summary-bar">
+        <div>Profit: <span class="pnl-profit" id="bs-profit-val">+₹425.00</span></div>
+        <div>Liability: <span class="pnl-liability" id="bs-liability-val">₹500.00</span></div>
+      </div>
+
+      <button class="btn-place-bet" id="btn-submit-bet">PLACE BET</button>
+    </div>
+  </div>
+
+  <!-- ============================================================
+       SIDENAV DRAWER (Exact GoPanel Pixel-for-Pixel Architecture)
+  ============================================================ -->
+  <div class="sidenav-backdrop" id="sidenav-backdrop"></div>
+  <aside class="sidenav-drawer" id="sidenav-drawer">
+    <!-- Header: Pure Black with AllBazi Logo & White Circle Close Button -->
+    <div class="sidenav-header">
+      <div class="sidenav-logo-wrap">
+        <img src="assets/logo.jpg" alt="AllBazi" class="sidenav-brand-logo">
+      </div>
+      <button class="btn-sidenav-close-circle" id="btn-close-sidenav" title="Close Menu">
+        <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#000000" stroke-width="3.2" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="15 18 9 12 15 6"></polyline>
+        </svg>
+      </button>
+    </div>
+
+    <!-- User Strip: Solid Dark Bar with White User Icon & Name -->
+    <div class="sidenav-user-strip" id="sidenav-user-strip">
+      <svg viewBox="0 0 24 24" width="20" height="20" fill="#ffffff">
+        <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+      </svg>
+      <span class="sidenav-user-title" id="drawer-user-name">Guest User</span>
+    </div>
+
+    <!-- Menu Items List (The 6 Exact GoPanel Items) -->
+    <div class="sidenav-items-list">
+      <div class="sidenav-menu-row" id="nav-item-profile">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="#ffffff">
+          <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+        </svg>
+        <span>Profile</span>
+      </div>
+      <div class="sidenav-menu-row" id="nav-item-withdraw-details">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="#ffffff">
+          <path d="M4 10v7h3v-7H4zm6 0v7h3v-7h-3zm6 0v7h3v-7h-3zM2 22h19v-3H2v3zm9.5-20L2 6v2h19V6l-9.5-4z"/>
+        </svg>
+        <span>Withdrawal Details</span>
+      </div>
+      <div class="sidenav-menu-row" id="nav-item-passbook">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="#ffffff">
+          <path d="M19 3H5c-1.1 0-2 .9-2 2v14c0 1.1.9 2 2 2h14c1.1 0 2-.9 2-2V5c0-1.1-.9-2-2-2zm0 16H5V5h14v14z"/>
+          <circle cx="12" cy="8.5" r="2.5"/>
+          <path d="M7 16c0-1.66 3.34-2.5 5-2.5s5 .84 5 2.5V17H7v-1z"/>
+        </svg>
+        <span>Account Statement</span>
+      </div>
+      <div class="sidenav-menu-row" id="nav-item-activebets">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="#ffffff">
+          <path d="M14.4 6L14 4H5v17h2v-7h5.6l.4 2h7V6z"/>
+        </svg>
+        <span>Active Bets</span>
+      </div>
+      <div class="sidenav-menu-row" id="nav-item-notifications">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="#ffffff">
+          <path d="M12 22c1.1 0 2-.9 2-2h-4c0 1.1.9 2 2 2zm6-6v-5c0-3.07-1.63-5.64-4.5-6.32V4c0-.83-.67-1.5-1.5-1.5s-1.5.67-1.5 1.5v.68C7.64 5.36 6 7.92 6 11v5l-2 2v1h16v-1l-2-2z"/>
+        </svg>
+        <span>Notifications</span>
+      </div>
+      <div class="sidenav-menu-row" id="nav-item-rules">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="#ffffff">
+          <path d="M12 1L3 5v6c0 5.55 3.84 10.74 9 12 5.16-1.26 9-6.45 9-12V5l-9-4z"/>
+        </svg>
+        <span>Rules</span>
+      </div>
+    </div>
+
+    <!-- Sidenav Footer: Solid Yellow Full-Width Button -->
+    <div class="sidenav-footer-wrap">
+      <button class="btn-sidenav-login-yellow" id="btn-sidenav-auth-action">Login | Signup</button>
+    </div>
+  </aside>
+
+  <!-- ============================================================
+       LOGIN / SIGNUP WINDOW (Exact GoPanel Slide-Up Bottom Sheet)
+  ============================================================ -->
+  <!-- ============================================================
+       LOGIN / SIGNUP WINDOW (Exact GoPanel Slide-Up Bottom Sheet)
+  ============================================================ -->
+  <div class="login-sheet-overlay" id="modal-login">
+    <div class="login-sheet-container" id="login-sheet-container">
+      
+      <!-- SCREEN 1: Mobile Phone Number Input & Country Picker -->
+      <div class="login-view-step" id="login-view-phone">
+        <!-- Dark Circle Close Button at Top-Right -->
+        <button class="btn-login-close-circle" data-close="modal-login" title="Close">
+          <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+
+        <!-- Center Brand Logo -->
+        <div class="login-logo-header">
+          <img src="assets/logo.jpg" alt="AllBazi" class="login-brand-logo">
+        </div>
+
+        <!-- Welcome Title -->
+        <h2 class="login-title-text">Login | Signup</h2>
+
+        <!-- Country Code Dropdown Popover (Exact Match to Image 1) -->
+        <div class="country-dropdown-popover" id="country-dropdown-popover" style="display: none;">
+          <div class="country-search-box">
+            <input type="text" id="country-search-input" class="country-search-input" placeholder="Country Code" autocomplete="off">
+          </div>
+          <div class="country-list-scroll" id="country-list-scroll">
+            <!-- Dynamically populated from COUNTRY_CODES -->
+          </div>
+        </div>
+
+        <!-- Phone Number Input Bar with Indian Flag -->
+        <div class="login-phone-pill" id="login-phone-box">
+          <div class="flag-prefix-box" id="btn-country-picker" title="Select Country Code">
+            <img src="assets/flags/in.png" alt="India" class="selected-flag-img" id="selected-flag-icon">
+            <span class="country-dial-code" id="selected-dial-code">+91</span>
+            <span class="dropdown-triangle-icon">▼</span>
+          </div>
+          <div class="phone-pill-divider"></div>
+          <input type="tel" id="login-phone-input" class="phone-text-input" placeholder="Enter Mobile Number" maxlength="15" autocomplete="tel">
+        </div>
+
+        <!-- Button 1: White Get OTP on SMS -->
+        <button class="btn-login-white-action" id="btn-get-otp-sms">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="#111111">
+            <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/>
+          </svg>
+          <span>Get OTP on SMS</span>
+        </button>
+
+        <!-- OR Separator -->
+        <div class="login-or-separator">OR</div>
+
+        <!-- Button 2: White Login with Demo ID -->
+        <button class="btn-login-white-action" id="btn-login-demo-id">
+          <span>Login with Demo ID</span>
+        </button>
+      </div>
+
+      <!-- SCREEN 2: Exact Enter Verification Code OTP Screen (Exact Match to Image 2) -->
+      <div class="login-view-step" id="login-view-otp" style="display: none;">
+        <!-- Top Navigation Bar: Back on Left, Close on Right -->
+        <div class="otp-top-bar">
+          <button class="btn-otp-back" id="btn-otp-back" type="button" title="Back to Phone Input">
+            <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="19" y1="12" x2="5" y2="12"/>
+              <polyline points="12 19 5 12 12 5"/>
+            </svg>
+            <span>Back</span>
+          </button>
+          <button class="btn-login-close-circle" data-close="modal-login" title="Close">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="#ffffff" stroke-width="2.5" stroke-linecap="round">
+              <line x1="18" y1="6" x2="6" y2="18"/>
+              <line x1="6" y1="6" x2="18" y2="18"/>
+            </svg>
+          </button>
+        </div>
+
+        <!-- Center Brand Logo -->
+        <div class="login-logo-header" style="margin-top: -6px; margin-bottom: 12px;">
+          <img src="assets/logo.jpg" alt="AllBazi" class="login-brand-logo">
+        </div>
+
+        <!-- Screen Title -->
+        <h2 class="otp-title-text">Enter verification code</h2>
+        <!-- Subtitle showing destination phone number -->
+        <p class="otp-subtitle-text" id="otp-sent-subtitle">OTP has been sent to +91-7002107673 over SMS</p>
+
+        <!-- Solid Black Verification Code Input Bar with Paste Button -->
+        <div class="otp-input-container" id="otp-input-container">
+          <div class="otp-stars-display" id="otp-stars-display">
+            <span class="otp-slot empty">*</span>
+            <span class="otp-slot empty">*</span>
+            <span class="otp-slot empty">*</span>
+            <span class="otp-slot empty">*</span>
+            <span class="otp-slot empty">*</span>
+            <span class="otp-slot empty">*</span>
+          </div>
+          <!-- Hidden real input receiving keystrokes and pastes -->
+          <input type="tel" id="otp-real-input" class="otp-real-input" maxlength="6" autocomplete="one-time-code">
+          <button class="btn-otp-paste" id="btn-otp-paste" type="button" title="Paste OTP from SMS">
+            <svg viewBox="0 0 24 24" width="16" height="16" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M16 4h2a2 2 0 0 1 2 2v14a2 2 0 0 1-2 2H6a2 2 0 0 1-2-2V6a2 2 0 0 1 2-2h2"/>
+              <rect x="8" y="2" width="8" height="4" rx="1" ry="1"/>
+            </svg>
+            <span>Paste</span>
+          </button>
+        </div>
+
+        <!-- Submit Button -->
+        <button class="btn-login-white-action" id="btn-submit-otp-login" type="button">
+          <span>Login</span>
+        </button>
+
+        <!-- Footer Row: Resend Countdown on Left, Use Password on Right -->
+        <div class="otp-footer-row">
+          <div class="otp-resend-wrap">
+            <span id="otp-timer-label">Resend OTP in <span id="otp-timer-seconds">32</span> seconds</span>
+            <button id="btn-resend-otp-action" style="display: none; background: transparent; border: none; color: #FFC629; font-weight: 700; cursor: pointer; font-size: 12px; padding: 0;">Resend OTP</button>
+          </div>
+          <button class="btn-use-password" id="btn-use-password" type="button">Use Password</button>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <!-- Real In-App SMS Push Notification Banner -->
+  <div class="in-app-sms-banner" id="in-app-sms-banner">
+    <div class="sms-banner-header">
+      <div class="sms-app-info">
+        <svg viewBox="0 0 24 24" width="14" height="14" fill="#39e62b">
+          <path d="M20 2H4c-1.1 0-2 .9-2 2v18l4-4h14c1.1 0 2-.9 2-2V4c0-1.1-.9-2-2-2z"/>
+        </svg>
+        <span>Messages</span>
+        <span class="sms-dot">•</span>
+        <span class="sms-time">now</span>
+      </div>
+      <button class="sms-close-btn" id="btn-dismiss-sms">✕</button>
+    </div>
+    <div class="sms-banner-body">
+      <strong>AllBazi:</strong> Your verification code is <span class="sms-code-highlight" id="sms-code-display">742918</span>. Valid for 10 minutes.
+    </div>
+  </div>
+
+  <!-- Deposit Modal -->
+  <div class="modal-overlay" id="modal-deposit">
+    <div class="modal-box">
+      <div class="modal-head">
+        <div class="modal-title">Instant Deposit</div>
+        <button class="modal-close" data-close="modal-deposit">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-content">
+        <div style="background: #20242c; padding: 14px; border-radius: 8px; margin-bottom: 14px; text-align: center; border: 1px solid #2f3440;">
+          <div style="font-size: 11px; color: #888888; margin-bottom: 4px;">Verified UPI Gateway ID</div>
+          <div style="font-size: 17px; font-weight: 800; color: #FFC629; letter-spacing: 0.5px;">allbazi.panel@ybl</div>
+          <div style="font-size: 10px; color: #39e62b; margin-top: 4px;">⚡ 24/7 Automated Credit</div>
+        </div>
+        <div style="margin-bottom: 14px;">
+          <label style="font-size: 11px; font-weight: 700; display: block; margin-bottom: 4px; color: #bbb;">Amount (₹)</label>
+          <input type="number" id="deposit-amount-field" value="2000" style="width: 100%; height: 42px; background: #20242c; border: 1px solid #333845; border-radius: 6px; padding: 0 12px; color: #fff; font-size: 15px; font-weight: 800;">
+        </div>
+        <button class="btn-place-bet" id="btn-confirm-deposit">CONFIRM DEPOSIT</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Withdrawal Modal -->
+  <div class="modal-overlay" id="modal-withdraw">
+    <div class="modal-box">
+      <div class="modal-head">
+        <div class="modal-title">Instant Withdrawal</div>
+        <button class="modal-close" data-close="modal-withdraw">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-content">
+        <div style="margin-bottom: 12px;">
+          <label style="font-size: 11px; font-weight: 700; display: block; margin-bottom: 4px; color: #bbb;">Bank Account / UPI ID</label>
+          <input type="text" id="withdraw-account-field" placeholder="e.g. 9876543210@paytm" value="9876543210@paytm" style="width: 100%; height: 42px; background: #20242c; border: 1px solid #333845; border-radius: 6px; padding: 0 12px; color: #fff; font-size: 13px;">
+        </div>
+        <div style="margin-bottom: 16px;">
+          <label style="font-size: 11px; font-weight: 700; display: block; margin-bottom: 4px; color: #bbb;">Amount (₹)</label>
+          <input type="number" id="withdraw-amount-field" value="1000" style="width: 100%; height: 42px; background: #20242c; border: 1px solid #333845; border-radius: 6px; padding: 0 12px; color: #fff; font-size: 15px; font-weight: 800;">
+        </div>
+        <button class="btn-place-bet" id="btn-confirm-withdraw">SUBMIT WITHDRAWAL</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- Passbook Statement Modal -->
+  <div class="modal-overlay" id="modal-passbook">
+    <div class="modal-box">
+      <div class="modal-head">
+        <div class="modal-title">Account Statement (Passbook)</div>
+        <button class="modal-close" data-close="modal-passbook">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-content" style="max-height: 380px; overflow-y: auto;">
+        <table style="width: 100%; border-collapse: collapse; font-size: 11px;">
+          <thead>
+            <tr style="color: #888888; text-align: left; border-bottom: 1px solid #333;">
+              <th style="padding: 8px 6px;">Event</th>
+              <th style="padding: 8px 6px;">Type</th>
+              <th style="padding: 8px 6px;">Odds</th>
+              <th style="padding: 8px 6px;">Stake</th>
+              <th style="padding: 8px 6px;">Status</th>
+            </tr>
+          </thead>
+          <tbody id="statement-rows-body">
+            <!-- Rendered by JS -->
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <!-- Active Bets Modal -->
+  <div class="modal-overlay" id="modal-activebets">
+    <div class="modal-box">
+      <div class="modal-head">
+        <div class="modal-title">My Active Bets</div>
+        <button class="modal-close" data-close="modal-activebets">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-content" id="active-bets-list-container" style="max-height: 380px; overflow-y: auto;">
+        <!-- Rendered by JS -->
+      </div>
+    </div>
+  </div>
+
+  <!-- Interactive Aviator / Mini Game Modal -->
+  <div class="modal-overlay" id="modal-game-room">
+    <div class="modal-box" style="max-width: 400px; text-align: center;">
+      <div class="modal-head">
+        <div class="modal-title" id="game-room-title">Aviator ✈️</div>
+        <button class="modal-close" data-close="modal-game-room">
+          <svg viewBox="0 0 24 24" width="18" height="18" fill="none" stroke="currentColor" stroke-width="2.5">
+            <line x1="18" y1="6" x2="6" y2="18"/>
+            <line x1="6" y1="6" x2="18" y2="18"/>
+          </svg>
+        </button>
+      </div>
+      <div class="modal-content">
+        <div style="background: #000000; border-radius: 12px; height: 180px; position: relative; overflow: hidden; display: flex; flex-direction: column; align-items: center; justify-content: center; border: 1px solid #333845;">
+          <div style="font-size: 38px; font-weight: 900; color: #ff3344; font-family: monospace;" id="game-live-multiplier">2.48x</div>
+          <div style="color: #888; font-size: 11px; margin-top: 4px;" id="game-room-status">🚀 Airplane Flying...</div>
+        </div>
+        <div style="display: flex; gap: 8px; margin-top: 14px;">
+          <input type="number" id="game-bet-amount" value="500" style="flex: 1; height: 42px; background: #20242c; border: 1px solid #333845; border-radius: 6px; padding: 0 10px; color: #fff; font-size: 15px; font-weight: 800; text-align: center;">
+          <button class="btn-place-bet" style="flex: 1.5; margin-top: 0;" id="btn-game-cashout">CASHOUT (₹1,240)</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Toast Message -->
+  <div class="toast-msg" id="toast-message">
+    <span id="toast-icon-wrap">
+      <svg viewBox="0 0 24 24" width="18" height="18" fill="#39e62b">
+        <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
+      </svg>
+    </span>
+    <span id="toast-text">Bet Placed Successfully!</span>
+  </div>
+
+  <script src="js/data.js"></script>
+  <script src="js/app.js"></script>
+</body>
+</html>
