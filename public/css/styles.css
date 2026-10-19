@@ -908,6 +908,84 @@ html, body {
   color: #111111;
 }
 
+/* Odds Flash Micro-Animations (GoPanel / Betfair Exact Live Ticker) */
+@keyframes flashOddsBack {
+  0% { background-color: #4fb2f5; transform: scale(1.04); }
+  100% { background-color: #a0d8fb; transform: scale(1); }
+}
+@keyframes flashOddsLay {
+  0% { background-color: #fa7c96; transform: scale(1.04); }
+  100% { background-color: #fdc9d4; transform: scale(1); }
+}
+.odds-flash-back {
+  animation: flashOddsBack 0.45s cubic-bezier(0.2, 0.9, 0.3, 1);
+}
+.odds-flash-lay {
+  animation: flashOddsLay 0.45s cubic-bezier(0.2, 0.9, 0.3, 1);
+}
+
+.btn-cashout-pill.active {
+  background: #108538;
+  color: #ffffff;
+  cursor: pointer;
+  box-shadow: 0 0 10px rgba(16, 133, 56, 0.6);
+  animation: pulseCashout 1.8s infinite;
+}
+@keyframes pulseCashout {
+  0% { transform: scale(1); }
+  50% { transform: scale(1.06); }
+  100% { transform: scale(1); }
+}
+
+/* Fancy Session Markets Rows (GoPanel Exact) */
+.fancy-runner-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background: #ffffff;
+  padding: 8px 10px;
+  border-bottom: 1px solid #eeeeee;
+}
+.fancy-runner-row:last-child { border-bottom: none; }
+.fancy-title-text {
+  font-size: 11.5px;
+  font-weight: 700;
+  color: #111111;
+  flex: 1;
+  padding-right: 8px;
+}
+.fancy-tile {
+  width: 54px;
+  height: 40px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.1s, filter 0.15s;
+}
+.fancy-tile:hover { filter: brightness(0.95); }
+.fancy-tile.no-box {
+  background-color: #fdc9d4;
+  color: #6e1325;
+}
+.fancy-tile.yes-box {
+  background-color: #a0d8fb;
+  color: #053b61;
+}
+.fancy-runs-bold {
+  font-size: 13px;
+  font-weight: 900;
+  line-height: 1.1;
+}
+.fancy-rate-sub {
+  font-size: 9px;
+  font-weight: 700;
+  opacity: 0.85;
+}
+
 /* Mini Games Row */
 .mini-games-container { margin: 12px; }
 .mini-games-header {

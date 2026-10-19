@@ -374,6 +374,24 @@
 
       <!-- Market Container -->
       <div id="detail-market-container">
+        <!-- MATCH ODDS Section -->
+        <div class="market-card-block" id="detail-match-odds-block">
+          <div class="market-card-header">
+            <span>MATCH ODDS</span>
+            <button class="btn-cashout-pill" id="btn-cashout-mo">Cashout</button>
+          </div>
+          <div class="market-sub-limit">
+            <span>Min: 100 | Max: 10L</span>
+            <div style="display: flex; gap: 4px; width: 112px; justify-content: space-around;">
+              <span style="color: #053b61; font-weight: 700;">Back</span>
+              <span style="color: #6e1325; font-weight: 700;">Lay</span>
+            </div>
+          </div>
+          <div id="match-odds-rows-container">
+            <!-- Rendered by JS -->
+          </div>
+        </div>
+
         <!-- BOOKMAKER Section -->
         <div class="market-card-block">
           <div class="market-card-header">
@@ -388,6 +406,24 @@
             </div>
           </div>
           <div id="bookmaker-rows-container">
+            <!-- Rendered by JS -->
+          </div>
+        </div>
+
+        <!-- FANCY MARKET Section -->
+        <div class="market-card-block" id="detail-fancy-block">
+          <div class="market-card-header">
+            <span>FANCY MARKET (SESSION)</span>
+            <span style="font-size: 10px; color: #FFC629; font-weight: 700;">LIVE SESSION</span>
+          </div>
+          <div class="market-sub-limit">
+            <span>Min: 100 | Max: 2.5L</span>
+            <div style="display: flex; gap: 4px; width: 112px; justify-content: space-around;">
+              <span style="color: #6e1325; font-weight: 700;">No</span>
+              <span style="color: #053b61; font-weight: 700;">Yes</span>
+            </div>
+          </div>
+          <div id="fancy-rows-container">
             <!-- Rendered by JS -->
           </div>
         </div>

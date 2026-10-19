@@ -32,6 +32,71 @@ document.addEventListener("DOMContentLoaded", () => {
     ]
   };
 
+  // State Persistence Helpers (Local Storage Sync)
+  function saveState() {
+    try {
+      localStorage.setItem("allbazi_state", JSON.stringify({
+        user: state.user,
+        activeBets: state.activeBets,
+        passbook: state.passbook,
+        lang: state.lang || "EN"
+      }));
+    } catch (e) {}
+  }
+
+  function loadState() {
+    try {
+      const saved = localStorage.getItem("allbazi_state");
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        if (parsed.user) state.user = { ...state.user, ...parsed.user };
+        if (parsed.activeBets) state.activeBets = parsed.activeBets;
+        if (parsed.passbook) state.passbook = parsed.passbook;
+        if (parsed.lang) state.lang = parsed.lang;
+      }
+    } catch (e) {}
+  }
+
+  function applyLoggedInUI(phoneOrName) {
+    const balFormatted = Math.floor(state.user.balance).toLocaleString();
+    const heroBal = document.getElementById("hero-balance-num");
+    if (heroBal) heroBal.textContent = balFormatted;
+
+    const drawerUser = document.getElementById("drawer-user-name");
+    if (drawerUser) drawerUser.textContent = phoneOrName || state.user.username || "AllBazi VIP Member";
+
+    const topLogin = document.getElementById("btn-top-login");
+    if (topLogin) {
+      topLogin.textContent = "Deposit";
+      topLogin.style.background = "#FFC629";
+      topLogin.style.color = "#000000";
+    }
+    const topDemo = document.getElementById("btn-top-demo");
+    if (topDemo) topDemo.textContent = `₹${balFormatted}`;
+
+    const detailLogin = document.getElementById("btn-detail-login");
+    if (detailLogin) {
+      detailLogin.textContent = "Deposit";
+      detailLogin.style.background = "#FFC629";
+      detailLogin.style.color = "#000000";
+    }
+    const detailDemo = document.getElementById("btn-detail-demo");
+    if (detailDemo) detailDemo.textContent = `₹${balFormatted}`;
+
+    const sidenavAuth = document.getElementById("btn-sidenav-auth-action");
+    if (sidenavAuth) sidenavAuth.textContent = "Logout";
+  }
+
+  // Hydrate from localStorage immediately
+  loadState();
+  if (state.user.isLoggedIn) {
+    applyLoggedInUI(state.user.username);
+  }
+  if (state.lang) {
+    const langEl = document.getElementById("lang-code-text");
+    if (langEl) langEl.textContent = state.lang;
+  }
+
   // Sound Engine
   const audioCtx = new (window.AudioContext || window.webkitAudioContext)();
   function playTone(freq = 600, duration = 0.08) {
@@ -230,9 +295,13 @@ document.addEventListener("DOMContentLoaded", () => {
   // -------------------------------------------------------------
   // RENDER TABLES
   // -------------------------------------------------------------
-  function renderTables(filterQuery = "") {
+  function renderTables(filterQuery = "", inplayOnly = false) {
     const q = filterQuery.toLowerCase().trim();
-    const filterFn = m => !q || m.teams.toLowerCase().includes(q) || m.team1.toLowerCase().includes(q) || m.team2.toLowerCase().includes(q);
+    const filterFn = m => {
+      const matchesQ = !q || m.teams.toLowerCase().includes(q) || m.team1.toLowerCase().includes(q) || m.team2.toLowerCase().includes(q);
+      const matchesInplay = !inplayOnly || m.isLive;
+      return matchesQ && matchesInplay;
+    };
 
     renderMatchRows("cricket-table-rows", CRICKET_MATCHES.filter(filterFn));
     renderMatchRows("soccer-table-rows", SOCCER_MATCHES.filter(filterFn));
@@ -358,6 +427,8 @@ document.addEventListener("DOMContentLoaded", () => {
   // -------------------------------------------------------------
   // MATCH DETAIL VIEW LOGIC
   // -------------------------------------------------------------
+  // MATCH DETAIL VIEW LOGIC
+  // -------------------------------------------------------------
   function openMatchDetail(matchId) {
     const allMatches = [...CRICKET_MATCHES, ...SOCCER_MATCHES, ...TENNIS_MATCHES];
     const match = allMatches.find(m => m.id === matchId) || CRICKET_MATCHES[0];
@@ -379,7 +450,29 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("detail-team2-score").textContent = match.detail.team2Score;
       document.getElementById("detail-banner-text").textContent = match.detail.bannerText;
 
-      // Render Bookmaker rows
+      // 1. Render MATCH ODDS Section (GoPanel Exact)
+      const moContainer = document.getElementById("match-odds-rows-container");
+      if (moContainer) {
+        const moRunners = [
+          { name: match.team1, back: match.backPrice || 1.85, lay: match.layPrice || 1.87 },
+          { name: match.team2, back: (match.backPrice && match.backPrice > 2 ? 1.55 : 2.45), lay: (match.layPrice && match.layPrice > 2 ? 1.57 : 2.47) }
+        ];
+        moContainer.innerHTML = moRunners.map(r => `
+          <div class="market-runner-row">
+            <span class="runner-title-text">${r.name}</span>
+            <div class="col-odds-pair">
+              <button class="odds-tile back-box" data-runner="${r.name}" data-type="BACK" data-odds="${r.back}">
+                <span class="odds-price-bold">${r.back}</span>
+              </button>
+              <button class="odds-tile lay-box" data-runner="${r.name}" data-type="LAY" data-odds="${r.lay}">
+                <span class="odds-price-bold">${r.lay}</span>
+              </button>
+            </div>
+          </div>
+        `).join("");
+      }
+
+      // 2. Render Bookmaker rows
       const bmContainer = document.getElementById("bookmaker-rows-container");
       bmContainer.innerHTML = match.detail.bookmakerRunners.map(r => `
         <div class="market-runner-row">
@@ -395,7 +488,33 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
       `).join("");
 
-      // Render Tied match rows
+      // 3. Render FANCY Session Markets (GoPanel Exact)
+      const fancyContainer = document.getElementById("fancy-rows-container");
+      if (fancyContainer) {
+        const fancyList = [
+          { title: "35 Over IND Total Runs", noRuns: 242, noRate: 100, yesRuns: 244, yesRate: 100 },
+          { title: "V. Kohli Total 50 Runs", noRuns: 79, noRate: 90, yesRuns: 81, yesRate: 110 },
+          { title: "Fall of 4th Wicket", noRuns: 235, noRate: 95, yesRuns: 238, yesRate: 105 },
+          { title: "Australia 6 Over Runs", noRuns: 48, noRate: 90, yesRuns: 50, yesRate: 100 }
+        ];
+        fancyContainer.innerHTML = fancyList.map(f => `
+          <div class="fancy-runner-row">
+            <span class="fancy-title-text">${f.title}</span>
+            <div class="col-odds-pair">
+              <button class="fancy-tile no-box" data-runner="${f.title} (NO)" data-type="LAY" data-odds="1.95">
+                <span class="fancy-runs-bold">${f.noRuns}</span>
+                <span class="fancy-rate-sub">${f.noRate}</span>
+              </button>
+              <button class="fancy-tile yes-box" data-runner="${f.title} (YES)" data-type="BACK" data-odds="1.95">
+                <span class="fancy-runs-bold">${f.yesRuns}</span>
+                <span class="fancy-rate-sub">${f.yesRate}</span>
+              </button>
+            </div>
+          </div>
+        `).join("");
+      }
+
+      // 4. Render Tied match rows
       const tiedContainer = document.getElementById("tied-match-rows-container");
       tiedContainer.innerHTML = match.detail.tiedMatchRunners.map(r => `
         <div class="market-runner-row">
@@ -413,8 +532,8 @@ document.addEventListener("DOMContentLoaded", () => {
         </div>
       `).join("");
 
-      // Attach odds handlers in detail view
-      detailPage.querySelectorAll(".odds-tile").forEach(btn => {
+      // Attach odds handlers in detail view (both standard odds and fancy tiles)
+      detailPage.querySelectorAll(".odds-tile, .fancy-tile").forEach(btn => {
         btn.addEventListener("click", () => {
           playTone(520, 0.04);
           openBetSlip({
@@ -426,6 +545,9 @@ document.addEventListener("DOMContentLoaded", () => {
           });
         });
       });
+
+      // Update cashout availability
+      updateCashoutStatus(match);
     }
   }
 
@@ -471,19 +593,96 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // Cashout buttons
-  const bmCashout = document.getElementById("btn-cashout-bm");
-  if (bmCashout) {
-    bmCashout.addEventListener("click", () => {
-      showToast("Cashout not available: No active position to hedge.");
-    });
+  // Dynamic Cashout Hedging Engine (GoPanel / Betfair Exact)
+  function updateCashoutStatus(match) {
+    const detailMoBtn = document.getElementById("btn-cashout-mo");
+    const detailBmBtn = document.getElementById("btn-cashout-bm");
+    const detailTiedBtn = document.getElementById("btn-cashout-tied");
+
+    const activeBetsForMatch = state.activeBets.filter(b => b.status === "MATCHED");
+    if (activeBetsForMatch.length > 0) {
+      const latestBet = activeBetsForMatch[0];
+      const cashoutAmt = Math.floor(latestBet.stake * 1.35); // 35% profit hedge
+      
+      [detailMoBtn, detailBmBtn, detailTiedBtn].forEach(btn => {
+        if (btn) {
+          btn.textContent = `Cashout (₹${cashoutAmt.toLocaleString()})`;
+          btn.classList.add("active");
+          btn.onclick = () => executeCashout(latestBet, cashoutAmt);
+        }
+      });
+    } else {
+      [detailMoBtn, detailBmBtn, detailTiedBtn].forEach(btn => {
+        if (btn) {
+          btn.textContent = "Cashout";
+          btn.classList.remove("active");
+          btn.onclick = () => showToast("Cashout not available: No active position to hedge.");
+        }
+      });
+    }
   }
-  const tiedCashout = document.getElementById("btn-cashout-tied");
-  if (tiedCashout) {
-    tiedCashout.addEventListener("click", () => {
-      showToast("Cashout not available: No active position to hedge.");
+
+  function executeCashout(bet, amount) {
+    state.user.balance += amount;
+    state.user.exposure = Math.max(0, state.user.exposure - bet.stake);
+    bet.status = "CASHED OUT";
+
+    state.passbook.unshift({
+      event: bet.event,
+      type: "CASHOUT",
+      odds: bet.odds,
+      stake: bet.stake,
+      status: `+₹${amount.toLocaleString()} (WON)`
     });
+
+    document.getElementById("hero-balance-num").textContent = Math.floor(state.user.balance).toLocaleString();
+    const topDemo = document.getElementById("btn-top-demo");
+    if (topDemo && state.user.isLoggedIn) topDemo.textContent = `₹${Math.floor(state.user.balance).toLocaleString()}`;
+
+    playTone(900, 0.2);
+    showToast(`Cashed out successfully! ₹${amount.toLocaleString()} credited to wallet.`);
+    updateCashoutStatus();
+    saveState();
   }
+
+  // Live Odds Ticker (Real-Time Micro-Fluctuations Matching GoPanel & Betfair)
+  setInterval(() => {
+    const liveMatches = CRICKET_MATCHES.filter(m => m.isLive);
+    if (liveMatches.length === 0) return;
+
+    const m = liveMatches[Math.floor(Math.random() * liveMatches.length)];
+    const delta = (Math.random() > 0.5 ? 0.01 : -0.01);
+    
+    // Shift prices
+    if (m.backPrice && m.backPrice > 1.05) {
+      m.backPrice = parseFloat((m.backPrice + delta).toFixed(2));
+      m.layPrice = parseFloat((m.backPrice + 0.02).toFixed(2));
+    }
+
+    // Find and update DOM elements
+    const backBtn = document.querySelector(`.back-box[data-match-id="${m.id}"]`);
+    const layBtn = document.querySelector(`.lay-box[data-match-id="${m.id}"]`);
+
+    if (backBtn) {
+      const priceSpan = backBtn.querySelector('.odds-price-bold');
+      if (priceSpan) priceSpan.textContent = m.backPrice || '0';
+      backBtn.setAttribute('data-odds', m.backPrice || 1.85);
+      backBtn.classList.remove('odds-flash-back');
+      void backBtn.offsetWidth; // trigger reflow
+      backBtn.classList.add('odds-flash-back');
+    }
+
+    if (layBtn) {
+      const priceSpan = layBtn.querySelector('.odds-price-bold');
+      if (priceSpan) priceSpan.textContent = m.layPrice || '0';
+      layBtn.setAttribute('data-odds', m.layPrice || 1.87);
+      layBtn.classList.remove('odds-flash-lay');
+      void layBtn.offsetWidth;
+      layBtn.classList.add('odds-flash-lay');
+    }
+
+    updateCashoutStatus();
+  }, 2600);
 
   document.getElementById("btn-tab-fixture").addEventListener("click", () => showToast("Tournament Fixtures & Scorecard synced live"));
   document.getElementById("btn-tab-rules").addEventListener("click", () => showToast("Betfair Official Rules: Standard Market Settlement"));
@@ -615,7 +814,7 @@ document.addEventListener("DOMContentLoaded", () => {
     setTimeout(() => {
       state.user.balance -= liability;
       state.user.exposure += liability;
-      document.getElementById("hero-balance-num").textContent = Math.floor(state.user.balance).toLocaleString();
+      applyLoggedInUI(state.user.username);
 
       state.activeBets.unshift({
         event: state.betSlip.matchTitle,
@@ -633,6 +832,9 @@ document.addEventListener("DOMContentLoaded", () => {
         stake,
         status: "PENDING"
       });
+
+      saveState();
+      updateCashoutStatus();
 
       playTone(700, 0.15);
       showToast(`Bet of ₹${stake} matched successfully on ${state.betSlip.runnerName}!`);
@@ -721,35 +923,12 @@ document.addEventListener("DOMContentLoaded", () => {
   function activateUserLogin(phoneOrName = "AllBazi VIP User") {
     state.user.isLoggedIn = true;
     state.user.username = phoneOrName;
-    state.user.balance = 10000.00;
-    state.user.exposure = 0.00;
-    state.user.availableLimit = 10000.00;
+    state.user.balance = state.user.balance > 0 ? state.user.balance : 10000.00;
+    state.user.exposure = state.user.exposure || 0.00;
+    state.user.availableLimit = state.user.balance;
 
-    document.getElementById("hero-balance-num").textContent = "10,000";
-    const drawerUser = document.getElementById("drawer-user-name");
-    if (drawerUser) drawerUser.textContent = phoneOrName;
-
-    // Header Pills
-    const topLogin = document.getElementById("btn-top-login");
-    if (topLogin) {
-      topLogin.textContent = "Deposit";
-      topLogin.style.background = "#FFC629";
-      topLogin.style.color = "#000000";
-    }
-    const topDemo = document.getElementById("btn-top-demo");
-    if (topDemo) topDemo.textContent = "₹10,000";
-
-    const detailLogin = document.getElementById("btn-detail-login");
-    if (detailLogin) {
-      detailLogin.textContent = "Deposit";
-      detailLogin.style.background = "#FFC629";
-      detailLogin.style.color = "#000000";
-    }
-    const detailDemo = document.getElementById("btn-detail-demo");
-    if (detailDemo) detailDemo.textContent = "₹10,000";
-
-    const sidenavAuth = document.getElementById("btn-sidenav-auth-action");
-    if (sidenavAuth) sidenavAuth.textContent = "Logout";
+    applyLoggedInUI(phoneOrName);
+    saveState();
 
     playTone(650, 0.12);
     closeModal("modal-login");
@@ -760,6 +939,7 @@ document.addEventListener("DOMContentLoaded", () => {
     state.user.username = "Guest";
     state.user.balance = 0.00;
     state.user.exposure = 0.00;
+    saveState();
 
     document.getElementById("hero-balance-num").textContent = "0";
     const drawerUser = document.getElementById("drawer-user-name");
@@ -1154,6 +1334,8 @@ document.addEventListener("DOMContentLoaded", () => {
   langToggle.addEventListener("click", () => {
     const isEn = langText.textContent === "EN";
     langText.textContent = isEn ? "HI" : "EN";
+    state.lang = isEn ? "HI" : "EN";
+    saveState();
     showToast(isEn ? "Language switched to Hindi (हिन्दी)" : "Language switched to English");
   });
 
@@ -1214,7 +1396,15 @@ document.addEventListener("DOMContentLoaded", () => {
       clearInterval(gameInterval);
       const winAmt = Math.floor(parseFloat(betInput.value || 500) * currentMultiplier);
       state.user.balance += winAmt;
-      document.getElementById("hero-balance-num").textContent = Math.floor(state.user.balance).toLocaleString();
+      state.passbook.unshift({
+        event: `${title} Cashout`,
+        type: "GAME WIN",
+        odds: parseFloat(currentMultiplier.toFixed(2)),
+        stake: parseFloat(betInput.value || 500),
+        status: `+₹${winAmt.toLocaleString()} (WON)`
+      });
+      applyLoggedInUI(state.user.username);
+      saveState();
       playTone(850, 0.2);
       showToast(`Cashed out at ${currentMultiplier.toFixed(2)}x! Won ₹${winAmt.toLocaleString()}`);
       closeModal("modal-game-room");
@@ -1341,7 +1531,15 @@ document.addEventListener("DOMContentLoaded", () => {
     const amt = parseFloat(document.getElementById("deposit-amount-field").value) || 2000;
     state.user.isLoggedIn = true;
     state.user.balance += amt;
-    document.getElementById("hero-balance-num").textContent = Math.floor(state.user.balance).toLocaleString();
+    state.passbook.unshift({
+      event: "Wallet Deposit (UPI)",
+      type: "CREDIT",
+      odds: 1.00,
+      stake: amt,
+      status: `+₹${amt.toLocaleString()} (SUCCESS)`
+    });
+    applyLoggedInUI(state.user.username);
+    saveState();
     playTone(800, 0.1);
     showToast(`Deposited ₹${amt.toLocaleString()} successfully!`);
     closeModal("modal-deposit");
@@ -1355,7 +1553,15 @@ document.addEventListener("DOMContentLoaded", () => {
       return;
     }
     state.user.balance -= amt;
-    document.getElementById("hero-balance-num").textContent = Math.floor(state.user.balance).toLocaleString();
+    state.passbook.unshift({
+      event: "Wallet Withdrawal (UPI)",
+      type: "DEBIT",
+      odds: 1.00,
+      stake: amt,
+      status: `-₹${amt.toLocaleString()} (PROCESSED)`
+    });
+    applyLoggedInUI(state.user.username);
+    saveState();
     playTone(500, 0.1);
     showToast(`Withdrawal of ₹${amt.toLocaleString()} submitted successfully!`);
     closeModal("modal-withdraw");
@@ -1445,13 +1651,17 @@ document.addEventListener("DOMContentLoaded", () => {
       document.getElementById("view-home").style.display = "block";
 
       if (nav === "home") {
+        renderTables("", false);
         window.scrollTo({ top: 0, behavior: "smooth" });
       } else if (nav === "sports") {
+        renderTables("", false);
         document.querySelector(".sports-table-container").scrollIntoView({ behavior: "smooth" });
       } else if (nav === "inplay") {
+        renderTables("", true);
         document.querySelector(".sports-table-container").scrollIntoView({ behavior: "smooth" });
         showToast("Filtering live In-Play fixtures");
       } else if (nav === "casino") {
+        renderTables("", false);
         document.getElementById("home-mini-games-scroll").scrollIntoView({ behavior: "smooth" });
       } else if (nav === "panels") {
         renderPassbook();
